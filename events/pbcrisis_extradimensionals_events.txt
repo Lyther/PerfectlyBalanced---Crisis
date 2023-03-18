@@ -283,95 +283,39 @@ country_event = {
             limit = {
                 has_global_flag = pbcrisis_detailed_customization
             }
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_fleet_aggressive
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_fleet_aggressive
-                    multiplier = pbcrisis_fleet_aggressive
-                }
+            add_modifier = {
+                modifier = extradimensionals_fleet_aggressive
+                multiplier = pbcrisis_fleet_aggressive
             }
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_fleet_defensive
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_fleet_defensive
-                    multiplier = pbcrisis_fleet_defensive
-                }
+            add_modifier = {
+                modifier = extradimensionals_fleet_defensive
+                multiplier = pbcrisis_fleet_defensive
             }
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_fleet_strategic
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_fleet_strategic
-                    multiplier = pbcrisis_fleet_strategic
-                }
+            add_modifier = {
+                modifier = extradimensionals_fleet_strategic
+                multiplier = pbcrisis_fleet_strategic
             }
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_army
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_army
-                    multiplier = pbcrisis_army
-                }
+            add_modifier = {
+                modifier = extradimensionals_army
+                multiplier = pbcrisis_army
             }
         }
         else_if = {
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_fleet_aggressive
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_fleet_aggressive
-                    multiplier = pbcrisis_global_difficulty
-                }
+            add_modifier = {
+                modifier = extradimensionals_fleet_aggressive
+                multiplier = pbcrisis_global_difficulty
             }
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_fleet_defensive
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_fleet_defensive
-                    multiplier = pbcrisis_global_difficulty
-                }
+            add_modifier = {
+                modifier = extradimensionals_fleet_defensive
+                multiplier = pbcrisis_global_difficulty
             }
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_fleet_strategic
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_fleet_strategic
-                    multiplier = pbcrisis_global_difficulty
-                }
+            add_modifier = {
+                modifier = extradimensionals_fleet_strategic
+                multiplier = pbcrisis_global_difficulty
             }
-            if = {
-                limit = {
-                    NOT = {
-                        has_modifier = extradimensionals_army
-                    }
-                }
-                add_modifier = {
-                    modifier = extradimensionals_army
-                    multiplier = pbcrisis_global_difficulty
-                }
+            add_modifier = {
+                modifier = extradimensionals_army
+                multiplier = pbcrisis_global_difficulty
             }
         }
         set_country_flag = pbcrisis_extradimensionals_modifier_initialized

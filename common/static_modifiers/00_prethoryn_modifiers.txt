@@ -22,7 +22,7 @@ prethoryn_fleet_defensive = {
 prethoryn_fleet_strategic = {
     ship_speed_mult = 0.05
     ship_sensor_range_add = 1
-    ship_orbital_bombardment_mult = 0.25
+    ship_orbital_bombardment_mult = 1.00
 }
 
 prethoryn_army = {

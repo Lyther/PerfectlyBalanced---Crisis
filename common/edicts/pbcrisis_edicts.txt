@@ -1,5 +1,5 @@
 set_pbcrisis_difficulty = {
-	length = 1
+	length = 0
 	icon = "GFX_edict_type_policy"
 
 	potential = {

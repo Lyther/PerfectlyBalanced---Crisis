@@ -25,7 +25,7 @@ extradimensionals_fleet_defensive = {
 extradimensionals_fleet_strategic = {
     ship_speed_mult = 0.10
     ship_sensor_range_add = 2
-    ship_orbital_bombardment_mult = 0.50
+    ship_orbital_bombardment_mult = 2.00
 }
 
 extradimensionals_army = {
