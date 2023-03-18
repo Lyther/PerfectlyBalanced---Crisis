@@ -18,9 +18,9 @@ sentinels_fleet_defensive = {
     ship_hull_mult = 2.50
     ship_armor_mult = 2.50
     ship_shield_mult = 2.50
-    ship_hull_regen_add_perc = 0.25
-    ship_armor_regen_add_perc = 0.25
-    ship_shield_regen_add_perc = 0.25
+    ship_hull_regen_add_perc = 0.025
+    ship_armor_regen_add_perc = 0.025
+    ship_shield_regen_add_perc = 0.025
 }
 
 sentinels_fleet_strategic = {

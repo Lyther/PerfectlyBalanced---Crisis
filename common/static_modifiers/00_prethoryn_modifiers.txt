@@ -14,8 +14,8 @@ prethoryn_fleet_defensive = {
     ship_armor_add = 800
     ship_hull_mult = 2.50
     ship_armor_mult = 2.50
-    ship_hull_regen_add_perc = 0.25
-    ship_armor_regen_add_perc = 0.25
+    ship_hull_regen_add_perc = 0.025
+    ship_armor_regen_add_perc = 0.025
 }
 
 prethoryn_fleet_strategic = {
