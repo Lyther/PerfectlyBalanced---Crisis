@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
  pbcrisis.2.name:0 "意识流平衡：天灾"
- pbcrisis.2.desc:0 "天灾降临之日，银河终焉之时。\n终末危机将得到§R极大程度§!的强化，且将会与游戏设置中的天灾倍率相互叠加。\n\n§B注意：每一次难度增加将导致天灾难度成倍提升！§!"
+ pbcrisis.2.desc:0 "天灾降临之日，银河终焉之时。\n终末危机将得到§R极大程度§!的强化，且将会与游戏设置中的天灾倍率相互叠加。\n§Y注释：如果发现天灾船体/护盾/装甲值归零，是由于每日恢复数值超过21亿导致，可以选择降低天灾的防御加成倍数。§!\n\n§B注意：每一次难度增加将导致天灾难度成倍提升！§!"
  pbcrisis.2.enable_general_customization:0 "使用§G通用§!难度设定"
  pbcrisis.2.enable_general_customizationTT:0 "将为天灾的£military_ship£军事实力提供全面的加成"
  pbcrisis.2.enable_detailed_customization:0 "使用§B详细§!难度设定"
@@ -57,3 +57,7 @@
  pbcrisis.2.set_detailed_difficulty_army_100TT:0 "哎呦卧槽这到底是§R什么鬼§!"
  pbcrisis.2.close_menu:0 "§E完成设置§!"
  pbcrisis.2.close_menuTT:0 "开始你的星海之旅吧！"
+
+ edict_set_pbcrisis_difficulty:0 "设置意识流平衡：天灾"
+ edict_set_pbcrisis_difficulty_desc:0 "如果发现天灾的舰体值等数据BUG等问题，可以重新设置天灾倍率。\n§Y注意：请保持时间流逝状态为停止。§!"
+ effect_edict_set_pbcrisis_difficulty:0 "重新打开意识流平衡：天灾设置界面"

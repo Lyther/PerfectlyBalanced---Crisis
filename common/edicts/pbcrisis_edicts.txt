@@ -1,0 +1,22 @@
+set_pbcrisis_difficulty = {
+	length = 1
+	icon = "GFX_edict_type_policy"
+
+	potential = {
+		is_ai = no
+		has_global_flag = pbcrisis_initialized
+	}
+
+	effect = {
+		hidden_effect = {
+			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
+			remove_global_flag = pbcrisis_sentinels_modifier_initialized
+			remove_global_flag = pbcrisis_extradimensionals_modifier_initialized
+			country_event = { id = pbcrisis.2 }
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

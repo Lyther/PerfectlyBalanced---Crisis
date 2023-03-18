@@ -10,6 +10,8 @@ Different types of natural disasters will receive different bonuses.
 * Sentinels: Greatly increases the rate of fire and provides an overall bonus to hull, armor, and shields.
 * Extradimensionals: Greatly increases weapon range, hull & shields, and output to hull/shields.
 
+The crisis multiplier can be reset after the game starts by edict.
+
 ## Needs to be updated/needs to be compatible
 
 Compatible with almost all mods by default, except some localized language content files, without overwriting any original content (stream of consciousness balance is so stream of consciousness).
@@ -29,6 +31,8 @@ Please leave a message through the Creative Workshop for other mods that are com
 * 索林原虫：极大增强了伤害、船体与装甲，以及对船体/装甲的输出。
 * 肃正协议：极大增加了射速，并提供船体、装甲、护盾的全面加成。
 * 高维恶魔：极大增加了射程、船体与护盾，以及对船体/护盾的输出。
+
+可以通过法令在游戏开始后进行天灾倍率重新设定。
 
 ## 需要更新/需要兼容
 

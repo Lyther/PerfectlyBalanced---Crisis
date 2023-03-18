@@ -1,6 +1,6 @@
 ﻿l_english:
  pbcrisis.2.name:0 "Perfectly Balanced - Crisis"
- pbcrisis.2.desc:0 "The day when the crisis comes, the time when the galaxy ends. \n The Final Crisis will be §R greatly §! enhanced and will stack with the vanilla crisis multiplier in the game settings. \n\n§BNote: Each increase in difficulty will result in an exponential increase in the difficulty of the crisis! §!"
+ pbcrisis.2.desc:0 "The day when the crisis comes, the time when the galaxy ends. \n The Final Crisis will be §R greatly §! enhanced and will stack with the vanilla crisis multiplier in the game settings. \n§YNote: If you find that the hull/shield/armor value of the crisis is zeroed out due to the daily recovery value exceeding 2.1 billion, you can choose to reduce the defense bonus multiplier of the crisis.§!\n\n§BNote: Each increase in difficulty will result in an exponential increase in the difficulty of the crisis! §!"
  pbcrisis.2.enable_general_customization:0 "Use §GGeneric§! difficulty setting"
  pbcrisis.2.enable_general_customizationTT:0 "Will provide a full bonus to the £military_ship£military power of the crisis."
  pbcrisis.2.enable_detailed_customization:0 "Use §BDetailed§! difficulty setting"
@@ -57,3 +57,7 @@
  pbcrisis.2.set_detailed_difficulty_army_100TT:0 "Ouch crap this is §Rwhat the hell§!"
  pbcrisis.2.close_menu:0 "§EComplete setup§!"
  pbcrisis.2.close_menuTT:0 "Start your journey to the galaxy!"
+
+ edict_set_pbcrisis_difficulty:0 "Setup Perfectly Balanced - Crisis"
+ edict_set_pbcrisis_difficulty_desc:0 "If you find problems such as buggy data such as the hull value of the crisis, you can reset the crisis multiplier.\n§YNote: Please keep the time passing state as stopped.§!"
+ effect_edict_set_pbcrisis_difficulty:0 "Open Perfectly Balanced - Crisis Setup Panel"

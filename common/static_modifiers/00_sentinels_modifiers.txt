@@ -18,14 +18,17 @@ sentinels_fleet_defensive = {
     ship_hull_mult = 2.50
     ship_armor_mult = 2.50
     ship_shield_mult = 2.50
-    ship_hull_regen_add_perc = 0.025
-    ship_armor_regen_add_perc = 0.025
-    ship_shield_regen_add_perc = 0.025
+    ship_hull_regen_add_perc = 0.05
+    ship_armor_regen_add_perc = 0.05
+    ship_shield_regen_add_perc = 0.05
+    ship_armor_hardening_add = 0.01
+    ship_shield_hardening_add = 0.01
 }
 
 sentinels_fleet_strategic = {
     ship_speed_mult = 0.05
     ship_sensor_range_add = 1
+    ship_orbital_bombardment_mult = 0.15
 }
 
 sentinels_army = {
