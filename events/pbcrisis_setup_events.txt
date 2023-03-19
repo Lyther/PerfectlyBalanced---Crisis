@@ -467,6 +467,9 @@ event = {
     id = pbcrisis.3
     hide_window = yes
     is_triggered_only = yes
+    trigger = {
+        has_global_flag = pbcrisis_initialized
+    }
     immediate = {
         remove_global_flag = pbcrisis_prethoryn_modifier_initialized
         remove_global_flag = pbcrisis_sentinels_modifier_initialized
