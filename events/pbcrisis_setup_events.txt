@@ -462,3 +462,25 @@ country_event = {
         custom_tooltip = pbcrisis.2.close_menuTT
     }
 }
+
+event = {
+    id = pbcrisis.3
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        remove_global_flag = pbcrisis_prethoryn_modifier_initialized
+        remove_global_flag = pbcrisis_sentinels_modifier_initialized
+        remove_global_flag = pbcrisis_extradimensionals_modifier_initialized
+        every_country = {
+            limit = {
+                OR = {
+                    is_country_type = portal_holder
+                    is_country_type = extradimensional
+                    is_country_type = extradimensional_2
+                    is_country_type = extradimensional_3
+                }
+            }
+            remove_country_flag = pbcrisis_extradimensionals_modifier_initialized
+        }
+    }
+}
