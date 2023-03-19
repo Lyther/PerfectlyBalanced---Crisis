@@ -463,7 +463,7 @@ country_event = {
     }
 }
 
-event = {
+country_event = {
     id = pbcrisis.3
     hide_window = yes
     is_triggered_only = yes

@@ -9,7 +9,7 @@ set_pbcrisis_difficulty = {
 
 	effect = {
 		hidden_effect = {
-			event = { id = pbcrisis.3 }
+			country_event = { id = pbcrisis.3 }
 			country_event = { id = pbcrisis.2 }
 		}
 	}
