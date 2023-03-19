@@ -473,7 +473,6 @@ country_event = {
     immediate = {
         remove_global_flag = pbcrisis_prethoryn_modifier_initialized
         remove_global_flag = pbcrisis_sentinels_modifier_initialized
-        remove_global_flag = pbcrisis_extradimensionals_modifier_initialized
         every_country = {
             limit = {
                 OR = {

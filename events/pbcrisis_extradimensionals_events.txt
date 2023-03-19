@@ -10,7 +10,6 @@ country_event = {
         is_country_type = global_event
         has_global_flag = extradimensional_invasion_happened
         NOT = {
-            has_global_flag = pbcrisis_extradimensionals_modifier_initialized
             has_global_flag = extradimensional_invasion_defeated
         }
     }
