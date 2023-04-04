@@ -43,7 +43,7 @@ country_event = {
         }
         country_event = {
             id = pbcrisis.1
-            days = 30
+            days = 7
         }
     }
 }

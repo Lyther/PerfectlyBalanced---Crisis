@@ -33,6 +33,7 @@ country_event = {
     trigger = {
         NOT = {
             has_global_flag = pbcrisis_sentinels_modifier_initialized
+            has_global_flag = cybrex_destroyed
         }
     }
     immediate = {

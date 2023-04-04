@@ -33,6 +33,7 @@ country_event = {
     trigger = {
         NOT = {
             has_global_flag = pbcrisis_prethoryn_modifier_initialized
+            has_global_flag = prethoryn_invasion_defeated
         }
     }
     immediate = {
