@@ -1,16 +1,22 @@
 # Perfectly Balanced - Crisis
 
+The development version of this mod would post on [GitHub](https://github.com/Lyther/PerfectlyBalanced---Crisis). If you want to play the latest version instead of the stable version, please follow the repo and use `git pull` to get the latest commit.
+
 (Not balanced at all!)
 
-The original game's crisis is really boring because of the stupid Paradox's laziness, resulting in the crisis multiplier becoming a bewildering bonus by adding zeros with eyes closed, and not yet over-power enough to balance the level of some powerful mods. Therefore, I have added more types of modifiers to the original crisis attribute bonus, so that crisis ships also gain such as range buff and hull recovery.
+The original game's crisis is boring because of the stupid Paradox's laziness, resulting in the crisis multiplier becoming a bewildering bonus by adding zeros with eyes closed, and not yet over-power enough to balance the level of some powerful mods. Therefore, I have added more types of modifiers to the original crisis attribute bonus, so that crisis ships also gain such as range buff and full recovery.
 
 Different types of natural disasters will receive different bonuses.
 
 * Prethoryn: Greatly enhances damage, hull and armor, and damage to hull/armor.
-* Sentinels: Greatly increases the rate of fire and provides an overall bonus to hull, armor, and shields.
+* Sentinels: This greatly increases the rate of fire and provides an overall bonus to hull, armor, and shields.
 * Extradimensionals: Greatly increases weapon range, hull & shields, and output to hull/shields.
 
 The crisis multiplier can be reset after the game starts by edict.
+
+## Combat power overflow correction
+
+Crisis balance MOD also carried out the combat power overflow correction, the ship and fleet combat power will have a higher ceiling (but the same may happen in the case of a large number of MOD combat power overflow), theoretically can support up to 500G fleet combat power ceiling.
 
 ## Needs to be updated/needs to be compatible
 
@@ -18,9 +24,11 @@ Compatible with almost all mods by default, except some localized language conte
 
 If a new version is released/needs to be compatible with an older version, please let us know via message or private message from Creative Workshop.
 
-Please leave a message through the Creative Workshop for other mods that are compatible, such as new weapon slot types/ship types. I'm also trying to add more types of enhancements to the crisis, such as buff auras, fleet size, ship templates, and leadership traits.
+Please leave a message through the Creative Workshop for compatible mods, such as new weapon slot types/ship types. I'm also trying to add more types of enhancements to the crisis, such as buff auras, fleet size, ship templates, and leadership traits.
 
 # 意识流平衡：天灾
+
+此MOD的开发版本将在[GitHub](https://github.com/Lyther/PerfectlyBalanced---Crisis)进行实时更新，如果您想游玩最新的开发版本而非稳定版本，可以通过GitHub仓库的`git pull`获取最新的commit。
 
 （完全随缘、随便做做数值的平衡！）
 
@@ -33,6 +41,10 @@ Please leave a message through the Creative Workshop for other mods that are com
 * 高维恶魔：极大增加了射程、船体与护盾，以及对船体/护盾的输出。
 
 可以通过法令在游戏开始后进行天灾倍率重新设定。
+
+## 战斗力溢出修正
+
+天灾平衡MOD同样进行了战斗力溢出修正，舰船和舰队的战斗力将会有更高的上限（但同样有可能在大量MOD的情况下发生战斗力溢出），理论上可以支持达到500G的舰队战斗力上限。
 
 ## 需要更新/需要兼容
 
