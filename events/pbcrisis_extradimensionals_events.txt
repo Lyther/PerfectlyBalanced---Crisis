@@ -7,7 +7,6 @@ country_event = {
     hide_window = yes
     is_triggered_only = yes
     trigger = {
-        is_country_type = global_event
         has_global_flag = extradimensional_invasion_happened
         NOT = {
             has_global_flag = extradimensional_invasion_defeated
@@ -85,7 +84,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_general_difficulty_nightmire
+                    has_global_flag = pbcrisis_general_difficulty_nightmare
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
@@ -135,7 +134,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmire
+                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
                 }
                 set_variable = {
                     which = pbcrisis_fleet_aggressive
@@ -180,7 +179,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_defensive_nightmire
+                    has_global_flag = pbcrisis_detailed_difficulty_defensive_nightmare
                 }
                 set_variable = {
                     which = pbcrisis_fleet_defensive
@@ -225,7 +224,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmire
+                    has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
                 }
                 set_variable = {
                     which = pbcrisis_fleet_strategic
@@ -270,7 +269,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_army_nightmire
+                    has_global_flag = pbcrisis_detailed_difficulty_army_nightmare
                 }
                 set_variable = {
                     which = pbcrisis_army

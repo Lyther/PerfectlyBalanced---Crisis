@@ -4,3 +4,12 @@ on_game_start_country = {
         pbcrisis.1
     }
 }
+
+on_monthly_pulse = {
+    events = {
+        crisis.204
+		crisis.205
+        crisis.206
+		crisis.240
+    }
+}

@@ -29,4 +29,5 @@ prethoryn_army = {
     army_health = 0.25
     army_damage = 0.25
     army_morale_damage_mult = 0.50
+    pop_purge_speed = 5.00
 }

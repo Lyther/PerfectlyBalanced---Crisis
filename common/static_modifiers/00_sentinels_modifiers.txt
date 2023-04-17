@@ -23,6 +23,7 @@ sentinels_fleet_defensive = {
     ship_shield_regen_add_perc = 0.05
     ship_armor_hardening_add = 0.01
     ship_shield_hardening_add = 0.01
+    planet_orbital_bombardment_damage = -0.05
 }
 
 sentinels_fleet_strategic = {
@@ -35,4 +36,5 @@ sentinels_army = {
     army_health = 0.25
     army_damage = 0.25
     army_morale_damage_mult = 0.50
+    pop_purge_speed = 2.50
 }
