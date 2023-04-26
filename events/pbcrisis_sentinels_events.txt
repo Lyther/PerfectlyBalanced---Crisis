@@ -7,7 +7,6 @@ country_event = {
     hide_window = yes
     is_triggered_only = yes
     trigger = {
-        has_global_flag = ghost_signal_5_flag
         NOT = {
             has_global_flag = pbcrisis_sentinels_modifier_initialized
             has_global_flag = cybrex_destroyed

@@ -7,7 +7,6 @@ country_event = {
     hide_window = yes
     is_triggered_only = yes
     trigger = {
-        has_global_flag = prethoryn_arrival
         NOT = {
             has_global_flag = pbcrisis_prethoryn_modifier_initialized
             has_global_flag = prethoryn_invasion_defeated

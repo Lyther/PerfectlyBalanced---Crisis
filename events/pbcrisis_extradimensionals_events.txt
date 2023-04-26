@@ -7,7 +7,6 @@ country_event = {
     hide_window = yes
     is_triggered_only = yes
     trigger = {
-        has_global_flag = extradimensional_invasion_happened
         NOT = {
             has_global_flag = extradimensional_invasion_defeated
         }
