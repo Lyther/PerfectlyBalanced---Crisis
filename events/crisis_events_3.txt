@@ -624,7 +624,7 @@ country_event = {
 		}
 		else = {
 			every_country = {
-				limit = { is_country_type = default }
+				limit = { has_authority = auth_machine_intelligence }
 				country_event = { id = crisis.2500 days = 100 random = 200 }
 			}
 		}
@@ -4085,7 +4085,7 @@ planet_event = {
 			}
 			effect = {
 				create_leader = {
-					class = ruler
+					class = admiral
 					species = event_target:contingency_bot
 					name = random
 					effect = {
@@ -7626,7 +7626,7 @@ country_event = {
 
 	immediate = {
 		kill_leader = {
-			type = ruler
+			ruler = yes
 			show_notification = no
 		}
 	}

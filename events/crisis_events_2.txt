@@ -140,6 +140,7 @@ country_event = {
 							}
 						}
 					}
+					has_star_flag = crisis_spawn_exclude
 				}
 			}
 			set_star_flag = extradimensional_origin_system
