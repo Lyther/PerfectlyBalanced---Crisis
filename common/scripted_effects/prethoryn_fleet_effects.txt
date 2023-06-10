@@ -17,6 +17,7 @@
 ############################
 
 swarm_vanguard = {
+
 	random_list = {
 		10 = {
 			create_leader = {
@@ -169,861 +170,6 @@ swarm_vanguard = {
 			set_fleet_bombardment_stance = armageddon
 		}
 	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-				}
-			}
-		}
-		swarm_vanguard_default = yes
-	}
-}
-
-swarm_vanguard_default = {
-	random_list = {
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 2345
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 4253
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 9184
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 6516
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 123
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 3438
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 5375
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 333
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 99
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 451
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Vanguard"
-		effect = {
-			set_owner = PREV
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Small"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 33
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
-				}
-			}
-		}
-		swarm_vanguard_low = yes
-	}
-}
-
-swarm_vanguard_low = {
-	random_list = {
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 3746
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 1425
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 9218
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 3651
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 2123
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 6343
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 9537
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 5333
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 343
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 3768
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Vanguard"
-		effect = {
-			set_owner = PREV
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Small"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 45
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
-				}
-			}
-		}
-		swarm_vanguard_medium = yes
-	}
-}
-
-swarm_vanguard_medium = {
-	random_list = {
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 9734
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 387
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 6783
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 978
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 4554
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 3543
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 7897
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 245
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 1534
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 1234
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Vanguard"
-		effect = {
-			set_owner = PREV
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Small"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 60
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
-				}
-			}
-		}
-		swarm_vanguard_high = yes
-	}
-}
-
-swarm_vanguard_high = {
-	random_list = {
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 34532
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 45346
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 34531
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 21337
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 12307
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 77896
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 2132
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 21370
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 45375
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 98800
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Vanguard"
-		effect = {
-			set_owner = PREV
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Small"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 105
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
-				}
-			}
-		}
-		swarm_vanguard_nightmare = yes
-	}
-}
-
-swarm_vanguard_nightmare = {
-	random_list = {
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 754343
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 123732
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 783373
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 974137
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 135297
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 262758
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 489741
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 702547
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 25190
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-		10 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 812921
-				traits = {
-					trait = leader_trait_void_swimmer
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Vanguard"
-		effect = {
-			set_owner = PREV
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Small"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 330
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
-		}
-	}
 }
 
 swarm_brood = {
@@ -1050,491 +196,292 @@ swarm_brood = {
 			}
 		}
 	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
-		effect = {
-			set_owner = event_target:prethoryn
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 10
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 8
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 35
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = event_target:spawn_location
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
-		}
-	}
-
 	if = {
 		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-				}
+			check_variable = {
+				which = pbcrisis_fleet_component
+				value = 2
 			}
 		}
-		swarm_brood_default = yes
-	}
-}
-
-swarm_brood_default = {
-	random_list = {
-		75 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 3434
-			}
-		}
-		25 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 3
-				set_age = 4343
-				traits = {
-					trait = leader_trait_hive_affinity
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
-		effect = {
-			set_owner = event_target:prethoryn
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 11
+		create_fleet = {
+			name = "NAME_Prethoryn_Star_Brood"
+			effect = {
+				set_owner = event_target:prethoryn
 				create_ship = {
 					name = random
-					design = "NAME_Swarm_Large"
+					design = "NAME_Swarm_Queen_2"
 					graphical_culture = "swarm_01"
 				}
-			}
-			while = {
-				count = 9
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
+				assign_leader = last_created_leader
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Large_2"
+						graphical_culture = "swarm_01"
+					}
 				}
-			}
-			while = {
-				count = 39
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Carrier_2"
+						graphical_culture = "swarm_01"
+					}
 				}
+				while = {
+					count = 35
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Small_2"
+						graphical_culture = "swarm_01"
+					}
+				}
+				set_location = event_target:spawn_location
+				set_fleet_stance = aggressive
+				set_aggro_range = 500
+				set_aggro_range_measure_from = self
+				set_fleet_bombardment_stance = armageddon
 			}
-			set_location = event_target:spawn_location
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
-
-	if = {
+	else_if = {
 		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
-				}
+			check_variable = {
+				which = pbcrisis_fleet_component
+				value = 4
 			}
 		}
-		swarm_brood_low = yes
-	}
-}
-
-swarm_brood_low = {
-	random_list = {
-		75 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 9152
-			}
-		}
-		25 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 5
-				set_age = 7625
-				traits = {
-					trait = leader_trait_hive_affinity
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
-		effect = {
-			set_owner = event_target:prethoryn
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			while = {
-				count = 15
+		create_fleet = {
+			name = "NAME_Prethoryn_Star_Brood"
+			effect = {
+				set_owner = event_target:prethoryn
 				create_ship = {
 					name = random
-					design = "NAME_Swarm_Large"
+					design = "NAME_Swarm_Queen_4"
 					graphical_culture = "swarm_01"
 				}
-			}
-			while = {
-				count = 12
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
+				assign_leader = last_created_leader
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Large_4"
+						graphical_culture = "swarm_01"
+					}
 				}
-			}
-			while = {
-				count = 53
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Carrier_4"
+						graphical_culture = "swarm_01"
+					}
 				}
+				while = {
+					count = 35
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Small_4"
+						graphical_culture = "swarm_01"
+					}
+				}
+				set_location = event_target:spawn_location
+				set_fleet_stance = aggressive
+				set_aggro_range = 500
+				set_aggro_range_measure_from = self
+				set_fleet_bombardment_stance = armageddon
 			}
-			set_location = event_target:spawn_location
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
-
-	if = {
+	else_if = {
 		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
-				}
+			check_variable = {
+				which = pbcrisis_fleet_component
+				value = 8
 			}
 		}
-		swarm_brood_medium = yes
-	}
-}
-
-swarm_brood_medium = {
-	random_list = {
-		75 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 7892
-			}
-		}
-		25 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 6
-				set_age = 6452
-				traits = {
-					trait = leader_trait_hive_affinity
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
-		effect = {
-			set_owner = event_target:prethoryn
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			while = {
-				count = 20
+		create_fleet = {
+			name = "NAME_Prethoryn_Star_Brood"
+			effect = {
+				set_owner = event_target:prethoryn
 				create_ship = {
 					name = random
-					design = "NAME_Swarm_Large"
+					design = "NAME_Swarm_Queen_8"
 					graphical_culture = "swarm_01"
 				}
-			}
-			while = {
-				count = 16
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
+				assign_leader = last_created_leader
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Large_8"
+						graphical_culture = "swarm_01"
+					}
 				}
-			}
-			while = {
-				count = 70
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Carrier_8"
+						graphical_culture = "swarm_01"
+					}
 				}
+				while = {
+					count = 35
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Small_8"
+						graphical_culture = "swarm_01"
+					}
+				}
+				set_location = event_target:spawn_location
+				set_fleet_stance = aggressive
+				set_aggro_range = 500
+				set_aggro_range_measure_from = self
+				set_fleet_bombardment_stance = armageddon
 			}
-			set_location = event_target:spawn_location
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
-
-	if = {
+	else_if = {
 		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
-				}
+			check_variable = {
+				which = pbcrisis_fleet_component
+				value = 16
 			}
 		}
-		swarm_brood_high = yes
-	}
-}
-
-swarm_brood_high = {
-	random_list = {
-		75 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 92458
-			}
-		}
-		25 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 11
-				set_age = 13284
-				traits = {
-					trait = leader_trait_hive_affinity
-				}
-			}
-		}
-	}
-
-	create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
-		effect = {
-			set_owner = event_target:prethoryn
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 3
+		create_fleet = {
+			name = "NAME_Prethoryn_Star_Brood"
+			effect = {
+				set_owner = event_target:prethoryn
 				create_ship = {
 					name = random
-					design = "NAME_Swarm_Queen"
+					design = "NAME_Swarm_Queen_16"
 					graphical_culture = "swarm_01"
 				}
-			}
-			while = {
-				count = 35
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
+				assign_leader = last_created_leader
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Large_16"
+						graphical_culture = "swarm_01"
+					}
 				}
-			}
-			while = {
-				count = 28
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Carrier_16"
+						graphical_culture = "swarm_01"
+					}
 				}
-			}
-			while = {
-				count = 123
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
+				while = {
+					count = 35
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Small_16"
+						graphical_culture = "swarm_01"
+					}
 				}
+				set_location = event_target:spawn_location
+				set_fleet_stance = aggressive
+				set_aggro_range = 500
+				set_aggro_range_measure_from = self
+				set_fleet_bombardment_stance = armageddon
 			}
-			set_location = event_target:spawn_location
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
-
-	if = {
+	else_if = {
 		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
-				}
+			check_variable = {
+				which = pbcrisis_fleet_component
+				value = 32
 			}
 		}
-		swarm_brood_nightmare = yes
+		create_fleet = {
+			name = "NAME_Prethoryn_Star_Brood"
+			effect = {
+				set_owner = event_target:prethoryn
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Queen_32"
+					graphical_culture = "swarm_01"
+				}
+				assign_leader = last_created_leader
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Large_32"
+						graphical_culture = "swarm_01"
+					}
+				}
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Carrier_32"
+						graphical_culture = "swarm_01"
+					}
+				}
+				while = {
+					count = 35
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Small_32"
+						graphical_culture = "swarm_01"
+					}
+				}
+				set_location = event_target:spawn_location
+				set_fleet_stance = aggressive
+				set_aggro_range = 500
+				set_aggro_range_measure_from = self
+				set_fleet_bombardment_stance = armageddon
+			}
+		}
 	}
-}
-
-swarm_brood_nightmare = {
-	random_list = {
-		75 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 459384
-			}
-		}
-		25 = {
-			create_leader = {
-				class = admiral
-				species = event_target:prethoryn_species
-				name = random
-				skill = 33
-				set_age = 126361
-				traits = {
-					trait = leader_trait_hive_affinity
-				}
-			}
-		}
-	}
-	create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
-		effect = {
-			set_owner = event_target:prethoryn
-			create_ship = {
-				name = random
-				design = "NAME_Swarm_Queen"
-				graphical_culture = "swarm_01"
-			}
-			assign_leader = last_created_leader
-			while = {
-				count = 10
+	else = {
+		create_fleet = {
+			name = "NAME_Prethoryn_Star_Brood"
+			effect = {
+				set_owner = event_target:prethoryn
 				create_ship = {
 					name = random
-					design = "NAME_Swarm_Queen"
+					design = "NAME_Swarm_Queen_1"
 					graphical_culture = "swarm_01"
 				}
-			}
-			while = {
-				count = 110
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
+				assign_leader = last_created_leader
+				while = {
+					count = 10
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Large_1"
+						graphical_culture = "swarm_01"
+					}
 				}
-			}
-			while = {
-				count = 88
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Carrier_1"
+						graphical_culture = "swarm_01"
+					}
 				}
-			}
-			while = {
-				count = 385
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
+				while = {
+					count = 35
+					create_ship = {
+						name = random
+						design = "NAME_Swarm_Small_1"
+						graphical_culture = "swarm_01"
+					}
 				}
+				set_location = event_target:spawn_location
+				set_fleet_stance = aggressive
+				set_aggro_range = 500
+				set_aggro_range_measure_from = self
+				set_fleet_bombardment_stance = armageddon
 			}
-			set_location = event_target:spawn_location
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
 }
@@ -1546,206 +493,6 @@ swarm_armies = {
 			set_owner = event_target:prethoryn
 			while = {
 				count = 20
-				create_army_transport = {
-					ship_name = "NAME_Prethoryn_Transport"
-					graphical_culture = "swarm_01"
-					army_name = "NAME_Prethoryn_Invaders"
-					army_type = "swarm_army"
-					species = event_target:prethoryn_species
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 20
-				angle = random
-			}
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_army_default
-				}
-			}
-		}
-		swarm_armies_default = yes
-	}
-}
-
-swarm_armies_default = {
-	create_fleet = {
-		name = "NAME_Prethoryn_Armies"
-		effect = {
-			set_owner = event_target:prethoryn
-			while = {
-				count = 22
-				create_army_transport = {
-					ship_name = "NAME_Prethoryn_Transport"
-					graphical_culture = "swarm_01"
-					army_name = "NAME_Prethoryn_Invaders"
-					army_type = "swarm_army"
-					species = event_target:prethoryn_species
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 20
-				angle = random
-			}
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_army_low
-				}
-			}
-		}
-		swarm_armies_low = yes
-	}
-}
-
-swarm_armies_low = {
-	create_fleet = {
-		name = "NAME_Prethoryn_Armies"
-		effect = {
-			set_owner = event_target:prethoryn
-			while = {
-				count = 30
-				create_army_transport = {
-					ship_name = "NAME_Prethoryn_Transport"
-					graphical_culture = "swarm_01"
-					army_name = "NAME_Prethoryn_Invaders"
-					army_type = "swarm_army"
-					species = event_target:prethoryn_species
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 20
-				angle = random
-			}
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_army_medium
-				}
-			}
-		}
-		swarm_armies_medium = yes
-	}
-}
-
-swarm_armies_medium = {
-	create_fleet = {
-		name = "NAME_Prethoryn_Armies"
-		effect = {
-			set_owner = event_target:prethoryn
-			while = {
-				count = 40
-				create_army_transport = {
-					ship_name = "NAME_Prethoryn_Transport"
-					graphical_culture = "swarm_01"
-					army_name = "NAME_Prethoryn_Invaders"
-					army_type = "swarm_army"
-					species = event_target:prethoryn_species
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 20
-				angle = random
-			}
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_army_high
-				}
-			}
-		}
-		swarm_armies_high = yes
-	}
-}
-
-swarm_armies_high = {
-	create_fleet = {
-		name = "NAME_Prethoryn_Armies"
-		effect = {
-			set_owner = event_target:prethoryn
-			while = {
-				count = 70
-				create_army_transport = {
-					ship_name = "NAME_Prethoryn_Transport"
-					graphical_culture = "swarm_01"
-					army_name = "NAME_Prethoryn_Invaders"
-					army_type = "swarm_army"
-					species = event_target:prethoryn_species
-				}
-			}
-			set_location = {
-				target = PREVPREV
-				distance = 20
-				angle = random
-			}
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_army_nightmare
-				}
-			}
-		}
-		swarm_armies_nightmare = yes
-	}
-}
-
-swarm_armies_nightmare = {
-	create_fleet = {
-		name = "NAME_Prethoryn_Armies"
-		effect = {
-			set_owner = event_target:prethoryn
-			while = {
-				count = 220
 				create_army_transport = {
 					ship_name = "NAME_Prethoryn_Transport"
 					graphical_culture = "swarm_01"
@@ -1795,22 +542,6 @@ feral_prethoryn_garrison_1 = {
 			garrison = yes
 		}
 	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-				}
-			}
-		}
-		feral_prethoryn_garrison_1_default = yes
-	}
 }
 
 feral_prethoryn_garrison_2 = {
@@ -1855,510 +586,6 @@ feral_prethoryn_garrison_2 = {
 			garrison = yes
 		}
 	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-				}
-			}
-		}
-		feral_prethoryn_garrison_2_default = yes
-	}
-}
-
-feral_prethoryn_garrison_1_default = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 62
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
-				}
-			}
-		}
-		feral_prethoryn_garrison_1_low = yes
-	}
-}
-
-feral_prethoryn_garrison_2_default = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 11
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 9
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 39
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
-				}
-			}
-		}
-		feral_prethoryn_garrison_2_low = yes
-	}
-}
-
-feral_prethoryn_garrison_1_low = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 84
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
-				}
-			}
-		}
-		feral_prethoryn_garrison_1_medium = yes
-	}
-}
-
-feral_prethoryn_garrison_2_low = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 15
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 12
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 53
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
-				}
-			}
-		}
-		feral_prethoryn_garrison_2_medium = yes
-	}
-}
-
-feral_prethoryn_garrison_1_medium = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 112
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
-				}
-			}
-		}
-		feral_prethoryn_garrison_1_high = yes
-	}
-}
-
-feral_prethoryn_garrison_2_medium = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 20
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 16
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 70
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
-				}
-			}
-		}
-		feral_prethoryn_garrison_2_high = yes
-	}
-}
-
-feral_prethoryn_garrison_1_high = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 196
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
-				}
-			}
-		}
-		feral_prethoryn_garrison_1_nightmare = yes
-	}
-}
-
-feral_prethoryn_garrison_2_high = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 35
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 28
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 123
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
-				}
-			}
-		}
-		feral_prethoryn_garrison_2_nightmare = yes
-	}
-}
-
-feral_prethoryn_garrison_1_nightmare = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 616
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
-}
-
-feral_prethoryn_garrison_2_nightmare = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 110
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Large"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 88
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Carrier"
-					graphical_culture = "swarm_01"
-				}
-			}
-			while = {
-				count = 385
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-		settings = {
-			garrison = yes
-		}
-	}
 }
 
 # Roaming
@@ -2370,216 +597,6 @@ feral_prethoryn_roaming_1 = {
 			set_owner = event_target:feral_prethoryn
 			while = {
 				count = 30
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_flag = roaming_prethoryn_fleet
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-				}
-			}
-		}
-		feral_prethoryn_roaming_1_default = yes
-	}
-}
-
-feral_prethoryn_roaming_1_default = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 33
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_flag = roaming_prethoryn_fleet
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
-				}
-			}
-		}
-		feral_prethoryn_roaming_1_low = yes
-	}
-}
-
-feral_prethoryn_roaming_1_low = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 45
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_flag = roaming_prethoryn_fleet
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
-				}
-			}
-		}
-		feral_prethoryn_roaming_1_medium = yes
-	}
-}
-
-feral_prethoryn_roaming_1_medium = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 60
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_flag = roaming_prethoryn_fleet
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
-				}
-			}
-		}
-		feral_prethoryn_roaming_1_high = yes
-	}
-}
-
-feral_prethoryn_roaming_1_high = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 105
-				create_ship = {
-					name = random
-					design = "NAME_Swarm_Small"
-					graphical_culture = "swarm_01"
-				}
-			}
-			set_location = {
-				target = prev
-				distance = 35
-				angle = random
-			}
-			set_fleet_flag = roaming_prethoryn_fleet
-			set_fleet_stance = aggressive
-			set_aggro_range = 500
-			set_aggro_range_measure_from = self
-		}
-	}
-
-	if = {
-		limit = {
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
-				}
-			}
-		}
-		feral_prethoryn_roaming_1_nightmare = yes
-	}
-}
-
-feral_prethoryn_roaming_1_nightmare = {
-	create_fleet = {
-		name = "NAME_Feral_Prethoryn"
-		effect = {
-			set_owner = event_target:feral_prethoryn
-			while = {
-				count = 330
 				create_ship = {
 					name = random
 					design = "NAME_Swarm_Small"

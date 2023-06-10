@@ -1,0 +1,29 @@
+prethoryn_fleet_aggressive = {
+    ship_weapon_damage = 4.00
+    ship_fire_rate_mult = 2.50
+    ship_weapon_range_mult = 0.20
+    ship_accuracy_add = 2
+    ship_tracking_add = 1
+    ship_hull_damage_mult = 0.05
+    ship_armor_damage_mult = 0.10
+    ship_armor_penetration_mult = 0.02
+}
+
+prethoryn_fleet_defensive = {
+    ship_hull_add = 400
+    ship_armor_add = 600
+    ship_hull_mult = 0.25
+    ship_armor_mult = 0.38
+    ship_hull_regen_add_static = 200
+    ship_armor_regen_add_static = 300
+    ship_armor_hardening_add = 0.05
+}
+
+prethoryn_fleet_strategic = {
+    ship_speed_mult = 0.02
+    ship_orbital_bombardment_mult = 1.00
+    army_health = 0.25
+    army_damage_mult = 0.25
+    army_morale_damage_mult = 0.50
+    pop_purge_speed = 5.00
+}

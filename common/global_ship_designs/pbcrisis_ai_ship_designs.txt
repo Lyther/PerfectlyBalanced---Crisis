@@ -1,0 +1,775 @@
+# AI Large Ship
+ship_design = {
+	name = "NAME_Euthanizer_1"
+	ship_size = large_ship_ai
+	section = {
+		template = "ai_large_warship_key"
+		slot = "mid"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_2"
+		}
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ENERGY_LANCE_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="HYPER_DRIVE_3"
+	required_component="COMBAT_COMPUTER_LINE_SAPIENT"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SENSOR_4"
+	required_component="AI_WARSHIP_AURA_1"
+}
+
+ship_design = {
+	name = "NAME_Euthanizer_2"
+	ship_size = large_ship_ai
+	section = {
+		template = "ai_large_warship_key"
+		slot = "mid"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_2"
+		}
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ENERGY_LANCE_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="HYPER_DRIVE_3"
+	required_component="COMBAT_COMPUTER_LINE_SAPIENT"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SENSOR_4"
+	required_component="AI_WARSHIP_AURA_2"
+}
+
+ship_design = {
+	name = "NAME_Euthanizer_4"
+	ship_size = large_ship_ai
+	section = {
+		template = "ai_large_warship_key"
+		slot = "mid"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_2"
+		}
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ENERGY_LANCE_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="HYPER_DRIVE_3"
+	required_component="COMBAT_COMPUTER_LINE_SAPIENT"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SENSOR_4"
+	required_component="AI_WARSHIP_AURA_4"
+}
+
+ship_design = {
+	name = "NAME_Euthanizer_8"
+	ship_size = large_ship_ai
+	section = {
+		template = "ai_large_warship_key"
+		slot = "mid"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_2"
+		}
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ENERGY_LANCE_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="HYPER_DRIVE_3"
+	required_component="COMBAT_COMPUTER_LINE_SAPIENT"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SENSOR_4"
+	required_component="AI_WARSHIP_AURA_8"
+}
+
+ship_design = {
+	name = "NAME_Euthanizer_16"
+	ship_size = large_ship_ai
+	section = {
+		template = "ai_large_warship_key"
+		slot = "mid"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_2"
+		}
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ENERGY_LANCE_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="HYPER_DRIVE_3"
+	required_component="COMBAT_COMPUTER_LINE_SAPIENT"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SENSOR_4"
+	required_component="AI_WARSHIP_AURA_16"
+}
+
+ship_design = {
+	name = "NAME_Euthanizer_32"
+	ship_size = large_ship_ai
+	section = {
+		template = "ai_large_warship_key"
+		slot = "mid"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_2"
+		}
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ENERGY_LANCE_1"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_SHIELD_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ARMOR_5"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="HYPER_DRIVE_3"
+	required_component="COMBAT_COMPUTER_LINE_SAPIENT"
+	required_component="SHIP_THRUSTER_4"
+	required_component="SENSOR_4"
+	required_component="AI_WARSHIP_AURA_32"
+}
+
+# AI Starbase
+ship_design = {
+	name = "NAME_AI_STARBASE_1"
+	ship_size = starbase_ai
+	country_type = ai_empire
+	section = {
+		template = "ai_starbase_key"
+		slot = "core"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "PD_02"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "XL_01"
+			template = "ENERGY_LANCE_1"
+		}
+	}
+	required_component="SENSOR_4"
+	required_component="AI_CORE_DETECTOR"
+	required_component="AI_STARBASE_AURA_1"
+}
+
+ship_design = {
+	name = "NAME_AI_STARBASE_2"
+	ship_size = starbase_ai
+	country_type = ai_empire
+	section = {
+		template = "ai_starbase_key"
+		slot = "core"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "PD_02"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "XL_01"
+			template = "ENERGY_LANCE_1"
+		}
+	}
+	required_component="SENSOR_4"
+	required_component="AI_CORE_DETECTOR"
+	required_component="AI_STARBASE_AURA_2"
+}
+
+ship_design = {
+	name = "NAME_AI_STARBASE_4"
+	ship_size = starbase_ai
+	country_type = ai_empire
+	section = {
+		template = "ai_starbase_key"
+		slot = "core"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "PD_02"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "XL_01"
+			template = "ENERGY_LANCE_1"
+		}
+	}
+	required_component="SENSOR_4"
+	required_component="AI_CORE_DETECTOR"
+	required_component="AI_STARBASE_AURA_4"
+}
+
+ship_design = {
+	name = "NAME_AI_STARBASE_8"
+	ship_size = starbase_ai
+	country_type = ai_empire
+	section = {
+		template = "ai_starbase_key"
+		slot = "core"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "PD_02"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "XL_01"
+			template = "ENERGY_LANCE_1"
+		}
+	}
+	required_component="SENSOR_4"
+	required_component="AI_CORE_DETECTOR"
+	required_component="AI_STARBASE_AURA_8"
+}
+
+ship_design = {
+	name = "NAME_AI_STARBASE_16"
+	ship_size = starbase_ai
+	country_type = ai_empire
+	section = {
+		template = "ai_starbase_key"
+		slot = "core"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "PD_02"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "XL_01"
+			template = "ENERGY_LANCE_1"
+		}
+	}
+	required_component="SENSOR_4"
+	required_component="AI_CORE_DETECTOR"
+	required_component="AI_STARBASE_AURA_16"
+}
+
+ship_design = {
+	name = "NAME_AI_STARBASE_32"
+	ship_size = starbase_ai
+	country_type = ai_empire
+	section = {
+		template = "ai_starbase_key"
+		slot = "core"
+
+		component = {
+			slot = "PD_01"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "PD_02"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_04"
+			template = "MEDIUM_PLASMA_3"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_GAMMA_LASER"
+		}
+		component = {
+			slot = "XL_01"
+			template = "ENERGY_LANCE_1"
+		}
+	}
+	required_component="SENSOR_4"
+	required_component="AI_CORE_DETECTOR"
+	required_component="AI_STARBASE_AURA_32"
+}

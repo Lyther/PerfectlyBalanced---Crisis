@@ -1,15 +1,17 @@
 on_game_start_country = {
     events = {
         pbcrisis.0
-        pbcrisis.1
     }
 }
 
-on_monthly_pulse = {
+on_single_player_save_game_load = {
     events = {
-        crisis.204
-		crisis.205
-        crisis.206
-		crisis.240
+        pbcrisis.0
+    }
+}
+
+on_monthly_pulse_country = {
+    events = {
+        pbcrisis.1
     }
 }

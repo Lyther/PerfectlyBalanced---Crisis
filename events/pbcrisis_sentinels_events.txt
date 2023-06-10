@@ -2,38 +2,26 @@ namespace = pbcrisis
 
 ### Sentinels
 
+# Event entrance
 country_event = {
     id = pbcrisis.20
     hide_window = yes
     is_triggered_only = yes
-    trigger = {
-        NOT = {
-            has_global_flag = pbcrisis_sentinels_modifier_initialized
-            has_global_flag = cybrex_destroyed
-        }
-    }
     immediate = {
-        every_country = {
+        if = {
             limit = {
                 is_country_type = ai_empire
             }
-            country_event = {
-                id = pbcrisis.21
-            }
+            country_event = { id = pbcrisis.21 }
         }
     }
 }
 
+# Add modifiers
 country_event = {
     id = pbcrisis.21
     hide_window = yes
     is_triggered_only = yes
-    trigger = {
-        NOT = {
-            has_global_flag = pbcrisis_sentinels_modifier_initialized
-            has_global_flag = cybrex_destroyed
-        }
-    }
     immediate = {
         if = {
             limit = {
@@ -41,47 +29,104 @@ country_event = {
             }
             if = {
                 limit = {
-                    has_global_flag = pbcrisis_general_difficulty_default
+                    has_global_flag = pbcrisis_general_difficulty_1
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
                     value = 1
                 }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 1
+                }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_general_difficulty_low
+                    has_global_flag = pbcrisis_general_difficulty_5
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
                     value = 5
                 }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 2
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 2
+                }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_general_difficulty_medium
+                    has_global_flag = pbcrisis_general_difficulty_10
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
                     value = 10
                 }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 3
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 4
+                }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_general_difficulty_high
+                    has_global_flag = pbcrisis_general_difficulty_25
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
                     value = 25
                 }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 4
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 8
+                }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_general_difficulty_nightmare
+                    has_global_flag = pbcrisis_general_difficulty_100
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
                     value = 100
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 5
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 16
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_1000
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 1000
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 6
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 32
                 }
             }
         }
@@ -91,7 +136,7 @@ country_event = {
             }
             if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
+                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_1
                 }
                 set_variable = {
                     which = pbcrisis_fleet_aggressive
@@ -100,7 +145,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
+                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_5
                 }
                 set_variable = {
                     which = pbcrisis_fleet_aggressive
@@ -109,7 +154,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
+                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_10
                 }
                 set_variable = {
                     which = pbcrisis_fleet_aggressive
@@ -118,7 +163,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
+                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_25
                 }
                 set_variable = {
                     which = pbcrisis_fleet_aggressive
@@ -127,16 +172,25 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
+                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_100
                 }
                 set_variable = {
                     which = pbcrisis_fleet_aggressive
                     value = 100
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_aggressive
+                    value = 1000
                 }
             }
             if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_defensive_default
+                    has_global_flag = pbcrisis_detailed_difficulty_defensive_1
                 }
                 set_variable = {
                     which = pbcrisis_fleet_defensive
@@ -145,7 +199,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_defensive_low
+                    has_global_flag = pbcrisis_detailed_difficulty_defensive_5
                 }
                 set_variable = {
                     which = pbcrisis_fleet_defensive
@@ -154,7 +208,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_defensive_medium
+                    has_global_flag = pbcrisis_detailed_difficulty_defensive_10
                 }
                 set_variable = {
                     which = pbcrisis_fleet_defensive
@@ -163,7 +217,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_defensive_high
+                    has_global_flag = pbcrisis_detailed_difficulty_defensive_25
                 }
                 set_variable = {
                     which = pbcrisis_fleet_defensive
@@ -172,16 +226,25 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_defensive_nightmare
+                    has_global_flag = pbcrisis_detailed_difficulty_defensive_100
                 }
                 set_variable = {
                     which = pbcrisis_fleet_defensive
                     value = 100
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_defensive
+                    value = 1000
                 }
             }
             if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_strategic_default
+                    has_global_flag = pbcrisis_detailed_difficulty_strategic_1
                 }
                 set_variable = {
                     which = pbcrisis_fleet_strategic
@@ -190,7 +253,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_strategic_low
+                    has_global_flag = pbcrisis_detailed_difficulty_strategic_5
                 }
                 set_variable = {
                     which = pbcrisis_fleet_strategic
@@ -199,7 +262,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_strategic_medium
+                    has_global_flag = pbcrisis_detailed_difficulty_strategic_10
                 }
                 set_variable = {
                     which = pbcrisis_fleet_strategic
@@ -208,7 +271,7 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_strategic_high
+                    has_global_flag = pbcrisis_detailed_difficulty_strategic_25
                 }
                 set_variable = {
                     which = pbcrisis_fleet_strategic
@@ -217,56 +280,128 @@ country_event = {
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
+                    has_global_flag = pbcrisis_detailed_difficulty_strategic_100
                 }
                 set_variable = {
                     which = pbcrisis_fleet_strategic
                     value = 100
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_strategic_1000
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_strategic
+                    value = 1000
                 }
             }
             if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_army_default
+                    has_global_flag = pbcrisis_detailed_difficulty_quantity_1
                 }
                 set_variable = {
-                    which = pbcrisis_army
+                    which = pbcrisis_fleet_quantity
                     value = 1
                 }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_army_low
+                    has_global_flag = pbcrisis_detailed_difficulty_quantity_4
                 }
                 set_variable = {
-                    which = pbcrisis_army
+                    which = pbcrisis_fleet_quantity
+                    value = 2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_quantity_16
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 3
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_quantity_64
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 4
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_quantity_256
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
                     value = 5
                 }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_army_medium
+                    has_global_flag = pbcrisis_detailed_difficulty_quantity_1024
                 }
                 set_variable = {
-                    which = pbcrisis_army
-                    value = 10
+                    which = pbcrisis_fleet_quantity
+                    value = 6
+                }
+            }
+            if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_component_1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 1
                 }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_army_high
+                    has_global_flag = pbcrisis_detailed_difficulty_component_2
                 }
                 set_variable = {
-                    which = pbcrisis_army
-                    value = 25
+                    which = pbcrisis_fleet_component
+                    value = 2
                 }
             }
             else_if = {
                 limit = {
-                    has_global_flag = pbcrisis_detailed_difficulty_army_nightmare
+                    has_global_flag = pbcrisis_detailed_difficulty_component_4
                 }
                 set_variable = {
-                    which = pbcrisis_army
-                    value = 100
+                    which = pbcrisis_fleet_component
+                    value = 4
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_component_8
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 8
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_component_16
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 16
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_detailed_difficulty_component_32
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 32
                 }
             }
         }
@@ -286,12 +421,8 @@ country_event = {
                 modifier = sentinels_fleet_strategic
                 multiplier = pbcrisis_fleet_strategic
             }
-            add_modifier = {
-                modifier = sentinels_army
-                multiplier = pbcrisis_army
-            }
         }
-        else_if = {
+        else = {
             add_modifier = {
                 modifier = sentinels_fleet_aggressive
                 multiplier = pbcrisis_global_difficulty
@@ -304,11 +435,6 @@ country_event = {
                 modifier = sentinels_fleet_strategic
                 multiplier = pbcrisis_global_difficulty
             }
-            add_modifier = {
-                modifier = sentinels_army
-                multiplier = pbcrisis_global_difficulty
-            }
         }
-        set_global_flag = pbcrisis_sentinels_modifier_initialized
     }
 }

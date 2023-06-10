@@ -1,4 +1,4 @@
-version="1.2.3"
+version="1.2.4"
 tags={
 	"Balance"
 	"Events"
@@ -6,5 +6,5 @@ tags={
 }
 picture="thumbnail.png"
 name="PerfectlyBalanced - Crisis"
-supported_version="3.7.*"
+supported_version="3.8.*"
 remote_file_id="2890050687"

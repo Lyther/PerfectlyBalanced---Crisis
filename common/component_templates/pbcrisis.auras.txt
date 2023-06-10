@@ -1,0 +1,1343 @@
+# Swarm Large Ship
+utility_component_template = {
+	key = "SWARM_WARSHIP_AURA_1"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_warship_1"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_warship_1
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -50
+			ship_armor_add = -100
+			ship_disengage_chance_mult = -0.2
+			ship_disengage_opportunities_add = -1
+			weapon_type_point_defense_weapon_damage_mult = -0.1
+			weapon_type_point_defense_weapon_fire_rate_mult = -0.1
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_WARSHIP_AURA_2"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_warship_2"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_warship_2
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -100
+			ship_armor_add = -200
+			ship_disengage_chance_mult = -0.4
+			ship_disengage_opportunities_add = -2
+			weapon_type_point_defense_weapon_damage_mult = -0.2
+			weapon_type_point_defense_weapon_fire_rate_mult = -0.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_WARSHIP_AURA_4"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_warship_4"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_warship_4
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -200
+			ship_armor_add = -400
+			ship_disengage_chance_mult = -0.8
+			ship_disengage_opportunities_add = -4
+			weapon_type_point_defense_weapon_damage_mult = -0.4
+			weapon_type_point_defense_weapon_fire_rate_mult = -0.4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_WARSHIP_AURA_8"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_warship_8"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_warship_8
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -400
+			ship_armor_add = -800
+			ship_disengage_chance_mult = -1.6
+			ship_disengage_opportunities_add = -8
+			weapon_type_point_defense_weapon_damage_mult = -0.8
+			weapon_type_point_defense_weapon_fire_rate_mult = -0.8
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_WARSHIP_AURA_16"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_warship_16"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_warship_16
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -800
+			ship_armor_add = -1600
+			ship_disengage_chance_mult = -3.2
+			ship_disengage_opportunities_add = -16
+			weapon_type_point_defense_weapon_damage_mult = -1.6
+			weapon_type_point_defense_weapon_fire_rate_mult = -1.6
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_WARSHIP_AURA_32"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_warship_32"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_warship_32
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -1600
+			ship_armor_add = -3200
+			ship_disengage_chance_mult = -6.4
+			ship_disengage_opportunities_add = -32
+			weapon_type_point_defense_weapon_damage_mult = -3.2
+			weapon_type_point_defense_weapon_fire_rate_mult = -3.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+# Swarm Large Carrier Ship
+utility_component_template = {
+	key = "SWARM_CARRIER_AURA_1"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_carrier_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_carrier_1"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_carrier_1
+			priority = 1
+		}
+		modifier = {
+			ship_hull_mult = -0.1
+			ship_armor_mult = -0.2
+			ship_speed_mult = -0.1
+			weapon_type_strike_craft_weapon_damage_mult = -0.2
+			weapon_type_strike_craft_weapon_fire_rate_mult = -0.2
+			weapon_type_strike_craft_speed_mult = -0.1
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_CARRIER_AURA_2"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_carrier_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_carrier_2"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_carrier_2
+			priority = 1
+		}
+		modifier = {
+			ship_hull_mult = -0.2
+			ship_armor_mult = -0.4
+			ship_speed_mult = -0.2
+			weapon_type_strike_craft_weapon_damage_mult = -0.4
+			weapon_type_strike_craft_weapon_fire_rate_mult = -0.4
+			weapon_type_strike_craft_speed_mult = -0.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_CARRIER_AURA_4"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_carrier_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_carrier_4"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_carrier_4
+			priority = 1
+		}
+		modifier = {
+			ship_hull_mult = -0.4
+			ship_armor_mult = -0.8
+			ship_speed_mult = -0.4
+			weapon_type_strike_craft_weapon_damage_mult = -0.8
+			weapon_type_strike_craft_weapon_fire_rate_mult = -0.8
+			weapon_type_strike_craft_speed_mult = -0.4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_CARRIER_AURA_8"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_carrier_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_carrier_8"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_carrier_8
+			priority = 1
+		}
+		modifier = {
+			ship_hull_mult = -0.8
+			ship_armor_mult = -1.6
+			ship_speed_mult = -0.8
+			weapon_type_strike_craft_weapon_damage_mult = -1.6
+			weapon_type_strike_craft_weapon_fire_rate_mult = -1.6
+			weapon_type_strike_craft_speed_mult = -0.8
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_CARRIER_AURA_16"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_carrier_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_carrier_16"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_carrier_16
+			priority = 1
+		}
+		modifier = {
+			ship_hull_mult = -1.6
+			ship_armor_mult = -3.2
+			ship_speed_mult = -1.6
+			weapon_type_strike_craft_weapon_damage_mult = -3.2
+			weapon_type_strike_craft_weapon_fire_rate_mult = -3.2
+			weapon_type_strike_craft_speed_mult = -1.6
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_CARRIER_AURA_32"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_carrier_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_carrier_32"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_carrier_32
+			priority = 1
+		}
+		modifier = {
+			ship_hull_mult = -3.2
+			ship_armor_mult = -6.4
+			ship_speed_mult = -3.2
+			weapon_type_strike_craft_weapon_damage_mult = -6.4
+			weapon_type_strike_craft_weapon_fire_rate_mult = -6.4
+			weapon_type_strike_craft_speed_mult = -3.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+# Swarm Queen
+utility_component_template = {
+	key = "SWARM_QUEEN_AURA_1"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { queen_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_queen_1"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_queen_1
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -0.5
+			ship_armor_regen_add_perc = -1.0
+			ship_armor_penetration_mult = -0.1
+			ship_hull_damage_mult = -0.1
+			ship_armor_damage_mult = -0.1
+			ship_ftl_jumpdrive_range_mult = -0.2
+			ship_jumpdrive_cooldown_mult = -0.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_QUEEN_AURA_2"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { queen_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_queen_2"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_queen_2
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -1.0
+			ship_armor_regen_add_perc = -2.0
+			ship_armor_penetration_mult = -0.2
+			ship_hull_damage_mult = -0.2
+			ship_armor_damage_mult = -0.2
+			ship_ftl_jumpdrive_range_mult = -0.4
+			ship_jumpdrive_cooldown_mult = -0.4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_QUEEN_AURA_4"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { queen_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_queen_4"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_queen_4
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -2.0
+			ship_armor_regen_add_perc = -4.0
+			ship_armor_penetration_mult = -0.4
+			ship_hull_damage_mult = -0.4
+			ship_armor_damage_mult = -0.4
+			ship_ftl_jumpdrive_range_mult = -0.8
+			ship_jumpdrive_cooldown_mult = -0.8
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_QUEEN_AURA_8"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { queen_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_queen_8"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_queen_8
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -4.0
+			ship_armor_regen_add_perc = -8.0
+			ship_armor_penetration_mult = -0.8
+			ship_hull_damage_mult = -0.8
+			ship_armor_damage_mult = -0.8
+			ship_ftl_jumpdrive_range_mult = -1.6
+			ship_jumpdrive_cooldown_mult = -1.6
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_QUEEN_AURA_16"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { queen_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_queen_16"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_queen_16
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -8.0
+			ship_armor_regen_add_perc = -16.0
+			ship_armor_penetration_mult = -1.6
+			ship_hull_damage_mult = -1.6
+			ship_armor_damage_mult = -1.6
+			ship_ftl_jumpdrive_range_mult = -3.2
+			ship_jumpdrive_cooldown_mult = -3.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SWARM_QUEEN_AURA_32"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { queen_swarm }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_swarm_queen_32"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_swarm_queen_32
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -16.0
+			ship_armor_regen_add_perc = -32.0
+			ship_armor_penetration_mult = -3.2
+			ship_hull_damage_mult = -3.2
+			ship_armor_damage_mult = -3.2
+			ship_ftl_jumpdrive_range_mult = -6.4
+			ship_jumpdrive_cooldown_mult = -6.4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+# Ai Large Ship
+utility_component_template = {
+	key = "AI_WARSHIP_AURA_1"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_warship_1"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_warship_1
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -50
+			ship_armor_add = -75
+			ship_shield_add = -75
+			ship_accuracy_add = -2
+			ship_tracking_add = -2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_WARSHIP_AURA_2"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_warship_2"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_warship_2
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -100
+			ship_armor_add = -150
+			ship_shield_add = -150
+			ship_accuracy_add = -4
+			ship_tracking_add = -4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_WARSHIP_AURA_4"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_warship_4"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_warship_4
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -200
+			ship_armor_add = -300
+			ship_shield_add = -300
+			ship_accuracy_add = -8
+			ship_tracking_add = -8
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_WARSHIP_AURA_8"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_warship_8"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_warship_8
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -400
+			ship_armor_add = -600
+			ship_shield_add = -600
+			ship_accuracy_add = -16
+			ship_tracking_add = -16
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_WARSHIP_AURA_16"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_warship_16"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_warship_16
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -800
+			ship_armor_add = -1200
+			ship_shield_add = -1200
+			ship_accuracy_add = -32
+			ship_tracking_add = -32
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_WARSHIP_AURA_32"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_warship_32"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_warship_32
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -1600
+			ship_armor_add = -2400
+			ship_shield_add = -2400
+			ship_accuracy_add = -64
+			ship_tracking_add = -64
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+# Ai Starbase
+utility_component_template = {
+	key = "AI_STARBASE_AURA_1"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { starbase_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_starbase_1"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_starbase_1
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -1.0
+			ship_armor_regen_add_perc = -1.5
+			ship_shield_regen_add_perc = -1.5
+			ship_armor_damage_mult = -0.1
+			ship_shield_damage_mult = -0.1
+			ship_armor_penetration_mult = -0.2
+			ship_shield_penetration_mult = -0.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_STARBASE_AURA_2"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { starbase_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_starbase_2"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_starbase_2
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -2.0
+			ship_armor_regen_add_perc = -3.0
+			ship_shield_regen_add_perc = -3.0
+			ship_armor_damage_mult = -0.2
+			ship_shield_damage_mult = -0.2
+			ship_armor_penetration_mult = -0.4
+			ship_shield_penetration_mult = -0.4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_STARBASE_AURA_4"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { starbase_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_starbase_4"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_starbase_4
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -4.0
+			ship_armor_regen_add_perc = -6.0
+			ship_shield_regen_add_perc = -6.0
+			ship_armor_damage_mult = -0.4
+			ship_shield_damage_mult = -0.4
+			ship_armor_penetration_mult = -0.8
+			ship_shield_penetration_mult = -0.8
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_STARBASE_AURA_8"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { starbase_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_starbase_8"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_starbase_8
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -8.0
+			ship_armor_regen_add_perc = -12.0
+			ship_shield_regen_add_perc = -12.0
+			ship_armor_damage_mult = -0.8
+			ship_shield_damage_mult = -0.8
+			ship_armor_penetration_mult = -1.6
+			ship_shield_penetration_mult = -1.6
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_STARBASE_AURA_16"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { starbase_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_starbase_16"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_starbase_16
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -16.0
+			ship_armor_regen_add_perc = -24.0
+			ship_shield_regen_add_perc = -24.0
+			ship_armor_damage_mult = -1.6
+			ship_shield_damage_mult = -1.6
+			ship_armor_penetration_mult = -3.2
+			ship_shield_penetration_mult = -3.2
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "AI_STARBASE_AURA_32"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { starbase_ai }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_ai_starbase_32"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_ai_starbase_32
+			priority = 1
+		}
+		modifier = {
+			ship_hull_regen_add_perc = -32.0
+			ship_armor_regen_add_perc = -48.0
+			ship_shield_regen_add_perc = -48.0
+			ship_armor_damage_mult = -3.2
+			ship_shield_damage_mult = -3.2
+			ship_armor_penetration_mult = -6.4
+			ship_shield_penetration_mult = -6.4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+# Extradimensional Large Ship
+utility_component_template = {
+	key = "EXTRADIMENSIONAL_WARSHIP_AURA_1"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ed }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_extradimensional_warship_1"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_extradimensional_warship_1
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -50
+			ship_shield_add = -100
+			ship_evasion_mult = -0.1
+			ship_speed_mult = -0.2
+			ship_accuracy_add = -4
+			ship_tracking_add = -4
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "EXTRADIMENSIONAL_WARSHIP_AURA_2"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ed }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_extradimensional_warship_2"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_extradimensional_warship_2
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -100
+			ship_shield_add = -200
+			ship_evasion_mult = -0.2
+			ship_speed_mult = -0.4
+			ship_accuracy_add = -8
+			ship_tracking_add = -8
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "EXTRADIMENSIONAL_WARSHIP_AURA_4"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ed }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_extradimensional_warship_4"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_extradimensional_warship_4
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -200
+			ship_shield_add = -400
+			ship_evasion_mult = -0.4
+			ship_speed_mult = -0.8
+			ship_accuracy_add = -16
+			ship_tracking_add = -16
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "EXTRADIMENSIONAL_WARSHIP_AURA_8"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ed }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_extradimensional_warship_8"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_extradimensional_warship_8
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -400
+			ship_shield_add = -800
+			ship_evasion_mult = -0.8
+			ship_speed_mult = -1.6
+			ship_accuracy_add = -32
+			ship_tracking_add = -32
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "EXTRADIMENSIONAL_WARSHIP_AURA_16"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ed }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_extradimensional_warship_16"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_extradimensional_warship_16
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -800
+			ship_shield_add = -1600
+			ship_evasion_mult = -1.6
+			ship_speed_mult = -3.2
+			ship_accuracy_add = -64
+			ship_tracking_add = -64
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "EXTRADIMENSIONAL_WARSHIP_AURA_32"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	size_restriction = { large_ship_ed }
+	component_set = "ship_aura_components"
+	hostile_aura = {
+		name = "aura_extradimensional_warship_32"
+		system_wide = yes
+		apply_on = ships
+		stack_info = {
+			id = hostile_extradimensional_warship_32
+			priority = 1
+		}
+		modifier = {
+			ship_hull_add = -1600
+			ship_shield_add = -3200
+			ship_evasion_mult = -3.2
+			ship_speed_mult = -6.4
+			ship_accuracy_add = -128
+			ship_tracking_add = -128
+		}
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}

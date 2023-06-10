@@ -1,53 +1,50 @@
 namespace = pbcrisis
 
+# Initialize event
 event = {
     id = pbcrisis.0
     hide_window = yes
     is_triggered_only = yes
-    trigger = {
-        NOT = {
-            has_global_flag = pbcrisis_initialized
-        }
-        is_ai = no
-    }
     immediate = {
-        set_global_flag = pbcrisis_initialized
-        set_global_flag = pbcrisis_general_customization
-        set_global_flag = pbcrisis_general_difficulty_default
-        set_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-        set_global_flag = pbcrisis_detailed_difficulty_defensive_default
-        set_global_flag = pbcrisis_detailed_difficulty_strategic_default
-        set_global_flag = pbcrisis_detailed_difficulty_army_default
-        country_event = {
-            id = pbcrisis.2
+        if = {
+            limit = {
+                NOT = {
+                    has_global_flag = pbcrisis_initialized
+                }
+            }
+            set_global_flag = pbcrisis_initialized
+            set_global_flag = pbcrisis_general_customization
+            set_global_flag = pbcrisis_general_difficulty_1
+            set_global_flag = pbcrisis_detailed_difficulty_aggressive_1
+            set_global_flag = pbcrisis_detailed_difficulty_defensive_1
+            set_global_flag = pbcrisis_detailed_difficulty_strategic_1
+            set_global_flag = pbcrisis_detailed_difficulty_quantity_1
+            set_global_flag = pbcrisis_detailed_difficulty_component_1
+            country_event = { id = pbcrisis.2 }
         }
     }
 }
 
+# Detection of final crisis
 country_event = {
     id = pbcrisis.1
     hide_window = yes
     is_triggered_only = yes
-    trigger = {
-        is_country_type = global_event
-    }
     immediate = {
-        country_event = {
-            id = pbcrisis.10
-        }
-        country_event = {
-            id = pbcrisis.20
-        }
-        country_event = {
-            id = pbcrisis.30
-        }
-        country_event = {
-            id = pbcrisis.1
-            days = 7
+        if = {
+            limit = {
+                has_global_flag = galactic_crisis_happened
+            }
+            every_country = {
+                country_event = { id = pbcrisis.10 }
+                country_event = { id = pbcrisis.20 }
+                country_event = { id = pbcrisis.30 }
+            }
         }
     }
 }
 
+# Menu
 country_event = {
     id = pbcrisis.2
     title = pbcrisis.2.name
@@ -63,9 +60,7 @@ country_event = {
         remove_global_flag = pbcrisis_general_customization
         set_global_flag = pbcrisis_detailed_customization
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
@@ -77,412 +72,482 @@ country_event = {
         remove_global_flag = pbcrisis_detailed_customization
         set_global_flag = pbcrisis_general_customization
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_general_customization
-            has_global_flag = pbcrisis_general_difficulty_default
+            has_global_flag = pbcrisis_general_difficulty_1
         }
         name = pbcrisis.2.set_general_difficulty_1
         custom_tooltip = pbcrisis.2.set_general_difficulty_1TT
-        remove_global_flag = pbcrisis_general_difficulty_default
-        set_global_flag = pbcrisis_general_difficulty_low
+        remove_global_flag = pbcrisis_general_difficulty_1
+        set_global_flag = pbcrisis_general_difficulty_5
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_general_customization
-            has_global_flag = pbcrisis_general_difficulty_low
+            has_global_flag = pbcrisis_general_difficulty_5
         }
         name = pbcrisis.2.set_general_difficulty_5
         custom_tooltip = pbcrisis.2.set_general_difficulty_5TT
-        remove_global_flag = pbcrisis_general_difficulty_low
-        set_global_flag = pbcrisis_general_difficulty_medium
+        remove_global_flag = pbcrisis_general_difficulty_5
+        set_global_flag = pbcrisis_general_difficulty_10
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_general_customization
-            has_global_flag = pbcrisis_general_difficulty_medium
+            has_global_flag = pbcrisis_general_difficulty_10
         }
         name = pbcrisis.2.set_general_difficulty_10
         custom_tooltip = pbcrisis.2.set_general_difficulty_10TT
-        remove_global_flag = pbcrisis_general_difficulty_medium
-        set_global_flag = pbcrisis_general_difficulty_high
+        remove_global_flag = pbcrisis_general_difficulty_10
+        set_global_flag = pbcrisis_general_difficulty_25
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_general_customization
-            has_global_flag = pbcrisis_general_difficulty_high
+            has_global_flag = pbcrisis_general_difficulty_25
         }
         name = pbcrisis.2.set_general_difficulty_25
         custom_tooltip = pbcrisis.2.set_general_difficulty_25TT
-        remove_global_flag = pbcrisis_general_difficulty_high
-        set_global_flag = pbcrisis_general_difficulty_nightmare
+        remove_global_flag = pbcrisis_general_difficulty_25
+        set_global_flag = pbcrisis_general_difficulty_100
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_general_customization
-            has_global_flag = pbcrisis_general_difficulty_nightmare
+            has_global_flag = pbcrisis_general_difficulty_100
         }
         name = pbcrisis.2.set_general_difficulty_100
         custom_tooltip = pbcrisis.2.set_general_difficulty_100TT
-        remove_global_flag = pbcrisis_general_difficulty_nightmare
-        set_global_flag = pbcrisis_general_difficulty_default
+        remove_global_flag = pbcrisis_general_difficulty_100
+        set_global_flag = pbcrisis_general_difficulty_1000
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_general_customization
+            has_global_flag = pbcrisis_general_difficulty_1000
+        }
+        name = pbcrisis.2.set_general_difficulty_1000
+        custom_tooltip = pbcrisis.2.set_general_difficulty_1000TT
+        remove_global_flag = pbcrisis_general_difficulty_1000
+        set_global_flag = pbcrisis_general_difficulty_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
+            has_global_flag = pbcrisis_detailed_difficulty_aggressive_1
         }
         name = pbcrisis.2.set_detailed_difficulty_aggressive_1
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_aggressive_1TT
-        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-        set_global_flag = pbcrisis_detailed_difficulty_aggressive_low
+        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_1
+        set_global_flag = pbcrisis_detailed_difficulty_aggressive_5
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
+            has_global_flag = pbcrisis_detailed_difficulty_aggressive_5
         }
         name = pbcrisis.2.set_detailed_difficulty_aggressive_5
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_aggressive_5TT
-        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_low
-        set_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
+        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_5
+        set_global_flag = pbcrisis_detailed_difficulty_aggressive_10
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
+            has_global_flag = pbcrisis_detailed_difficulty_aggressive_10
         }
         name = pbcrisis.2.set_detailed_difficulty_aggressive_10
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_aggressive_10TT
-        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
-        set_global_flag = pbcrisis_detailed_difficulty_aggressive_high
+        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_10
+        set_global_flag = pbcrisis_detailed_difficulty_aggressive_25
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
+            has_global_flag = pbcrisis_detailed_difficulty_aggressive_25
         }
         name = pbcrisis.2.set_detailed_difficulty_aggressive_25
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_aggressive_25TT
-        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_high
-        set_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
+        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_25
+        set_global_flag = pbcrisis_detailed_difficulty_aggressive_100
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
+            has_global_flag = pbcrisis_detailed_difficulty_aggressive_100
         }
         name = pbcrisis.2.set_detailed_difficulty_aggressive_100
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_aggressive_100TT
-        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
-        set_global_flag = pbcrisis_detailed_difficulty_aggressive_default
+        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_100
+        set_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_defensive_default
+            has_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+        }
+        name = pbcrisis.2.set_detailed_difficulty_aggressive_1000
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_aggressive_1000TT
+        remove_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+        set_global_flag = pbcrisis_detailed_difficulty_aggressive_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_1
         }
         name = pbcrisis.2.set_detailed_difficulty_defensive_1
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_1TT
-        remove_global_flag = pbcrisis_detailed_difficulty_defensive_default
-        set_global_flag = pbcrisis_detailed_difficulty_defensive_low
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_1
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_5
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_defensive_low
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_5
         }
         name = pbcrisis.2.set_detailed_difficulty_defensive_5
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_5TT
-        remove_global_flag = pbcrisis_detailed_difficulty_defensive_low
-        set_global_flag = pbcrisis_detailed_difficulty_defensive_medium
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_5
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_10
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_defensive_medium
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_10
         }
         name = pbcrisis.2.set_detailed_difficulty_defensive_10
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_10TT
-        remove_global_flag = pbcrisis_detailed_difficulty_defensive_medium
-        set_global_flag = pbcrisis_detailed_difficulty_defensive_high
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_10
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_25
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_defensive_high
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_25
         }
         name = pbcrisis.2.set_detailed_difficulty_defensive_25
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_25TT
-        remove_global_flag = pbcrisis_detailed_difficulty_defensive_high
-        set_global_flag = pbcrisis_detailed_difficulty_defensive_nightmare
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_25
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_100
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_defensive_nightmare
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_100
         }
         name = pbcrisis.2.set_detailed_difficulty_defensive_100
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_100TT
-        remove_global_flag = pbcrisis_detailed_difficulty_defensive_nightmare
-        set_global_flag = pbcrisis_detailed_difficulty_defensive_default
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_100
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_1000
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_strategic_default
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+        }
+        name = pbcrisis.2.set_detailed_difficulty_defensive_1000
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_1000TT
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_strategic_1
         }
         name = pbcrisis.2.set_detailed_difficulty_strategic_1
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_strategic_1TT
-        remove_global_flag = pbcrisis_detailed_difficulty_strategic_default
-        set_global_flag = pbcrisis_detailed_difficulty_strategic_low
+        remove_global_flag = pbcrisis_detailed_difficulty_strategic_1
+        set_global_flag = pbcrisis_detailed_difficulty_strategic_5
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_strategic_low
+            has_global_flag = pbcrisis_detailed_difficulty_strategic_5
         }
         name = pbcrisis.2.set_detailed_difficulty_strategic_5
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_strategic_5TT
-        remove_global_flag = pbcrisis_detailed_difficulty_strategic_low
-        set_global_flag = pbcrisis_detailed_difficulty_strategic_medium
+        remove_global_flag = pbcrisis_detailed_difficulty_strategic_5
+        set_global_flag = pbcrisis_detailed_difficulty_strategic_10
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_strategic_medium
+            has_global_flag = pbcrisis_detailed_difficulty_strategic_10
         }
         name = pbcrisis.2.set_detailed_difficulty_strategic_10
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_strategic_10TT
-        remove_global_flag = pbcrisis_detailed_difficulty_strategic_medium
-        set_global_flag = pbcrisis_detailed_difficulty_strategic_high
+        remove_global_flag = pbcrisis_detailed_difficulty_strategic_10
+        set_global_flag = pbcrisis_detailed_difficulty_strategic_25
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_strategic_high
+            has_global_flag = pbcrisis_detailed_difficulty_strategic_25
         }
         name = pbcrisis.2.set_detailed_difficulty_strategic_25
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_strategic_25TT
-        remove_global_flag = pbcrisis_detailed_difficulty_strategic_high
-        set_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
+        remove_global_flag = pbcrisis_detailed_difficulty_strategic_25
+        set_global_flag = pbcrisis_detailed_difficulty_strategic_100
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
+            has_global_flag = pbcrisis_detailed_difficulty_strategic_100
         }
         name = pbcrisis.2.set_detailed_difficulty_strategic_100
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_strategic_100TT
-        remove_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
-        set_global_flag = pbcrisis_detailed_difficulty_strategic_default
+        remove_global_flag = pbcrisis_detailed_difficulty_strategic_100
+        set_global_flag = pbcrisis_detailed_difficulty_strategic_1000
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_army_default
+            has_global_flag = pbcrisis_detailed_difficulty_strategic_1000
         }
-        name = pbcrisis.2.set_detailed_difficulty_army_1
-        custom_tooltip = pbcrisis.2.set_detailed_difficulty_army_1TT
-        remove_global_flag = pbcrisis_detailed_difficulty_army_default
-        set_global_flag = pbcrisis_detailed_difficulty_army_low
+        name = pbcrisis.2.set_detailed_difficulty_strategic_1000
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_strategic_1000TT
+        remove_global_flag = pbcrisis_detailed_difficulty_strategic_1000
+        set_global_flag = pbcrisis_detailed_difficulty_strategic_1
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_army_low
+            has_global_flag = pbcrisis_detailed_difficulty_quantity_1
         }
-        name = pbcrisis.2.set_detailed_difficulty_army_5
-        custom_tooltip = pbcrisis.2.set_detailed_difficulty_army_5TT
-        remove_global_flag = pbcrisis_detailed_difficulty_army_low
-        set_global_flag = pbcrisis_detailed_difficulty_army_medium
+        name = pbcrisis.2.set_detailed_difficulty_quantity_1
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_quantity_1TT
+        remove_global_flag = pbcrisis_detailed_difficulty_quantity_1
+        set_global_flag = pbcrisis_detailed_difficulty_quantity_2
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_army_medium
+            has_global_flag = pbcrisis_detailed_difficulty_quantity_2
         }
-        name = pbcrisis.2.set_detailed_difficulty_army_10
-        custom_tooltip = pbcrisis.2.set_detailed_difficulty_army_10TT
-        remove_global_flag = pbcrisis_detailed_difficulty_army_medium
-        set_global_flag = pbcrisis_detailed_difficulty_army_high
+        name = pbcrisis.2.set_detailed_difficulty_quantity_2
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_quantity_2TT
+        remove_global_flag = pbcrisis_detailed_difficulty_quantity_2
+        set_global_flag = pbcrisis_detailed_difficulty_quantity_3
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_army_high
+            has_global_flag = pbcrisis_detailed_difficulty_quantity_3
         }
-        name = pbcrisis.2.set_detailed_difficulty_army_25
-        custom_tooltip = pbcrisis.2.set_detailed_difficulty_army_25TT
-        remove_global_flag = pbcrisis_detailed_difficulty_army_high
-        set_global_flag = pbcrisis_detailed_difficulty_army_nightmare
+        name = pbcrisis.2.set_detailed_difficulty_quantity_3
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_quantity_3TT
+        remove_global_flag = pbcrisis_detailed_difficulty_quantity_3
+        set_global_flag = pbcrisis_detailed_difficulty_quantity_4
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
-            has_global_flag = pbcrisis_detailed_difficulty_army_nightmare
+            has_global_flag = pbcrisis_detailed_difficulty_quantity_4
         }
-        name = pbcrisis.2.set_detailed_difficulty_army_100
-        custom_tooltip = pbcrisis.2.set_detailed_difficulty_army_100TT
-        remove_global_flag = pbcrisis_detailed_difficulty_army_nightmare
-        set_global_flag = pbcrisis_detailed_difficulty_army_default
+        name = pbcrisis.2.set_detailed_difficulty_quantity_4
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_quantity_4TT
+        remove_global_flag = pbcrisis_detailed_difficulty_quantity_4
+        set_global_flag = pbcrisis_detailed_difficulty_quantity_5
         hidden_effect = {
-            country_event = {
-                id = pbcrisis.2
-            }
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_quantity_5
+        }
+        name = pbcrisis.2.set_detailed_difficulty_quantity_5
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_quantity_5TT
+        remove_global_flag = pbcrisis_detailed_difficulty_quantity_5
+        set_global_flag = pbcrisis_detailed_difficulty_quantity_6
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_quantity_6
+        }
+        name = pbcrisis.2.set_detailed_difficulty_quantity_6
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_quantity_6TT
+        remove_global_flag = pbcrisis_detailed_difficulty_quantity_6
+        set_global_flag = pbcrisis_detailed_difficulty_quantity_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_component_1
+        }
+        name = pbcrisis.2.set_detailed_difficulty_component_1
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_component_1TT
+        remove_global_flag = pbcrisis_detailed_difficulty_component_1
+        set_global_flag = pbcrisis_detailed_difficulty_component_2
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_component_2
+        }
+        name = pbcrisis.2.set_detailed_difficulty_component_2
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_component_2TT
+        remove_global_flag = pbcrisis_detailed_difficulty_component_2
+        set_global_flag = pbcrisis_detailed_difficulty_component_4
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_component_4
+        }
+        name = pbcrisis.2.set_detailed_difficulty_component_4
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_component_4TT
+        remove_global_flag = pbcrisis_detailed_difficulty_component_4
+        set_global_flag = pbcrisis_detailed_difficulty_component_8
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_component_8
+        }
+        name = pbcrisis.2.set_detailed_difficulty_component_8
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_component_8TT
+        remove_global_flag = pbcrisis_detailed_difficulty_component_8
+        set_global_flag = pbcrisis_detailed_difficulty_component_16
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_component_16
+        }
+        name = pbcrisis.2.set_detailed_difficulty_component_16
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_component_16TT
+        remove_global_flag = pbcrisis_detailed_difficulty_component_16
+        set_global_flag = pbcrisis_detailed_difficulty_component_32
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_component_32
+        }
+        name = pbcrisis.2.set_detailed_difficulty_component_32
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_component_32TT
+        remove_global_flag = pbcrisis_detailed_difficulty_component_32
+        set_global_flag = pbcrisis_detailed_difficulty_component_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
         }
     }
     option = {
         name = pbcrisis.2.close_menu
         custom_tooltip = pbcrisis.2.close_menuTT
-    }
-}
-
-country_event = {
-    id = pbcrisis.3
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        has_global_flag = pbcrisis_initialized
-    }
-    immediate = {
-        remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-        remove_global_flag = pbcrisis_sentinels_modifier_initialized
-        every_country = {
-            limit = {
-                OR = {
-                    is_country_type = portal_holder
-                    is_country_type = extradimensional
-                    is_country_type = extradimensional_2
-                    is_country_type = extradimensional_3
-                }
-            }
-            remove_country_flag = pbcrisis_extradimensionals_modifier_initialized
+        hidden_effect = {
+            country_event = { id = pbcrisis.1 }
         }
     }
 }

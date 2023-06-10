@@ -90,71 +90,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 600
-		modifier = {
-			factor = 0.5
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_default
-				}
-			}
-		}
-		modifier = {
-			factor = 0.2
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_low
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_medium
-				}
-			}
-		}
-		modifier = {
-			factor = 0.04
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_high
-				}
-			}
-		}
-		modifier = {
-			factor = 0.01
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
-				}
-			}
-		}
 	}
 
 	trigger = {
@@ -331,71 +266,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 120
-		modifier = {
-			factor = 0.5
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_default
-				}
-			}
-		}
-		modifier = {
-			factor = 0.2
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_low
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_medium
-				}
-			}
-		}
-		modifier = {
-			factor = 0.04
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_high
-				}
-			}
-		}
-		modifier = {
-			factor = 0.01
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
-				}
-			}
-		}
 	}
 
 	trigger = {
@@ -487,71 +357,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 30
-		modifier = {
-			factor = 0.5
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_default
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_default
-				}
-			}
-		}
-		modifier = {
-			factor = 0.2
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_low
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_low
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_medium
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_medium
-				}
-			}
-		}
-		modifier = {
-			factor = 0.04
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_high
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_high
-				}
-			}
-		}
-		modifier = {
-			factor = 0.01
-			OR = {
-				AND = {
-					has_global_flag = pbcrisis_general_customization
-					has_global_flag = pbcrisis_general_difficulty_nightmare
-				}
-				AND = {
-					has_global_flag = pbcrisis_detailed_customization
-					has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
-				}
-			}
-		}
 	}
 
 	trigger = {
@@ -615,6 +420,7 @@ country_event = {
 						add_ship_design = last_created_design
 						create_ship_design = { design = "NAME_Swarm_Starbase" }
 						add_ship_design = last_created_design
+						country_event = { id = pbcrisis.10 }
 					}
 				}
 				solar_system = {
@@ -676,9 +482,12 @@ country_event = {
 
 					### FIRST SYSTEM
 
-					swarm_vanguard = yes
-					swarm_vanguard = yes
-					swarm_vanguard = yes
+					while = {
+						count = pbcrisis_fleet_quantity
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+						swarm_vanguard = yes
+					}
 
 					# Constructor
 					create_fleet = {
@@ -713,9 +522,12 @@ country_event = {
 				random_system_planet = {
 					event_target:prethoryn = {
 
-						swarm_vanguard = yes
-						swarm_vanguard = yes
-						swarm_vanguard = yes
+						while = {
+							count = pbcrisis_fleet_quantity
+							swarm_vanguard = yes
+							swarm_vanguard = yes
+							swarm_vanguard = yes
+						}
 
 						# Constructor
 						create_fleet = {
@@ -755,9 +567,12 @@ country_event = {
 				random_system_planet = {
 					event_target:prethoryn = {
 
-						swarm_vanguard = yes
-						swarm_vanguard = yes
-						swarm_vanguard = yes
+						while = {
+							count = pbcrisis_fleet_quantity
+							swarm_vanguard = yes
+							swarm_vanguard = yes
+							swarm_vanguard = yes
+						}
 
 						# Constructor
 						create_fleet = {
@@ -798,9 +613,12 @@ country_event = {
 				random_system_planet = {
 					event_target:prethoryn = {
 
-						swarm_vanguard = yes
-						swarm_vanguard = yes
-						swarm_vanguard = yes
+						while = {
+							count = pbcrisis_fleet_quantity
+							swarm_vanguard = yes
+							swarm_vanguard = yes
+							swarm_vanguard = yes
+						}
 
 						# Constructor
 						create_fleet = {
@@ -823,113 +641,9 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_default
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_strategic_default
-					}
-				}
-			}
-			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-			random_country = {
-				limit = { is_country_type = global_event }
-				country_event = { id = crisis.19 days = 200 random = 100 }
-				country_event = { id = pbcrisis.10 }
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_low
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_strategic_low
-					}
-				}
-			}
-			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-			random_country = {
-				limit = { is_country_type = global_event }
-				country_event = { id = crisis.19 days = 80 random = 40 }
-				country_event = { id = pbcrisis.10 }
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_medium
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_strategic_medium
-					}
-				}
-			}
-			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-			random_country = {
-				limit = { is_country_type = global_event }
-				country_event = { id = crisis.19 days = 40 random = 20 }
-				country_event = { id = pbcrisis.10 }
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_high
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_strategic_high
-					}
-				}
-			}
-			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-			random_country = {
-				limit = { is_country_type = global_event }
-				country_event = { id = crisis.19 days = 16 random = 8 }
-				country_event = { id = pbcrisis.10 }
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_nightmare
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_strategic_nightmare
-					}
-				}
-			}
-			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-			random_country = {
-				limit = { is_country_type = global_event }
-				country_event = { id = crisis.19 days = 4 random = 2 }
-				country_event = { id = pbcrisis.10 }
-			}
-		}
-		else = {
-			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-			random_country = {
-				limit = { is_country_type = global_event }
-				country_event = { id = crisis.19 days = 400 random = 200 }
-				country_event = { id = pbcrisis.10 }
-			}
+		random_country = {
+			limit = { is_country_type = global_event }
+			country_event = { id = crisis.19 days = 400 random = 200 }
 		}
 	}
 }
@@ -1206,12 +920,8 @@ country_event = {
 					add_ship_design = last_created_design
 					create_ship_design = { design = "NAME_Swarm_Starbase" }
 					add_ship_design = last_created_design
+					country_event = { id = pbcrisis.10 }
 				}
-			}
-			remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-			random_country = {
-				limit = { is_country_type = global_event }
-				country_event = { id = pbcrisis.10 }
 			}
 			every_country = {
 				limit = {
@@ -1264,9 +974,12 @@ country_event = {
 				event_target:prethoryn = {
 
 					### FIRST SYSTEM
-					swarm_brood = yes
-					swarm_brood = yes
-					swarm_brood = yes
+					while = {
+						count = pbcrisis_fleet_quantity
+						swarm_brood = yes
+						swarm_brood = yes
+						swarm_brood = yes
+					}
 
 					# Infestors
 					while = {
@@ -1338,9 +1051,12 @@ country_event = {
 					save_event_target_as = spawn_location
 					event_target:prethoryn = {
 
-						swarm_brood = yes
-						swarm_brood = yes
-						swarm_brood = yes
+						while = {
+							count = pbcrisis_fleet_quantity
+							swarm_brood = yes
+							swarm_brood = yes
+							swarm_brood = yes
+						}
 
 						# Infestors
 						while = {
@@ -1413,9 +1129,12 @@ country_event = {
 					save_event_target_as = spawn_location
 					event_target:prethoryn = {
 
-						swarm_brood = yes
-						swarm_brood = yes
-						swarm_brood = yes
+						while = {
+							count = pbcrisis_fleet_quantity
+							swarm_brood = yes
+							swarm_brood = yes
+							swarm_brood = yes
+						}
 
 						# Infestors
 						while = {
@@ -1508,9 +1227,12 @@ country_event = {
 				random_system_planet = {
 					save_event_target_as = spawn_location
 					event_target:prethoryn = {
-						swarm_brood = yes
-						swarm_brood = yes
-						swarm_brood = yes
+						while = {
+							count = pbcrisis_fleet_quantity
+							swarm_brood = yes
+							swarm_brood = yes
+							swarm_brood = yes
+						}
 
 						# Infestors
 						while = {
@@ -2832,11 +2554,6 @@ event = {
 						}
 						set_global_flag = feral_prethoryn_appeared
 					}
-					remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-					random_country = {
-						limit = { is_country_type = global_event }
-						country_event = { id = pbcrisis.10 }
-					}
 					break = yes
 				}
 				if = {
@@ -3035,11 +2752,6 @@ country_event = {
 					attack_fleet = yes
 				}
 			}
-		}
-		remove_global_flag = pbcrisis_prethoryn_modifier_initialized
-		random_country = {
-			limit = { is_country_type = global_event }
-			country_event = { id = pbcrisis.10 }
 		}
 		establish_communications_no_message = event_target:feral_prethoryn_infighting
 		set_faction_hostility = {
@@ -3296,188 +3008,21 @@ event = {
 				limit = { exists = solar_system }
 				save_event_target_as = infestor_respawn_system
 			}
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_default
+			while = {
+				count = 5
+				create_fleet = {
+					name = "NAME_Prethoryn_Infestor"
+					effect = {
+						set_owner = event_target:prethoryn
+						create_ship = {
+							name = random
+							design = "NAME_Swarm_Colonizer"
+							graphical_culture = "swarm_01"
 						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_default
-						}
-					}
-				}
-				while = {
-					count = 6
-					create_fleet = {
-						name = "NAME_Prethoryn_Infestor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Colonizer"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:infestor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_low
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_low
-						}
-					}
-				}
-				while = {
-					count = 8
-					create_fleet = {
-						name = "NAME_Prethoryn_Infestor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Colonizer"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:infestor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_medium
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_medium
-						}
-					}
-				}
-				while = {
-					count = 10
-					create_fleet = {
-						name = "NAME_Prethoryn_Infestor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Colonizer"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:infestor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_high
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_high
-						}
-					}
-				}
-				while = {
-					count = 18
-					create_fleet = {
-						name = "NAME_Prethoryn_Infestor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Colonizer"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:infestor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_nightmare
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_nightmare
-						}
-					}
-				}
-				while = {
-					count = 55
-					create_fleet = {
-						name = "NAME_Prethoryn_Infestor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Colonizer"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:infestor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else = {
-				while = {
-					count = 5
-					create_fleet = {
-						name = "NAME_Prethoryn_Infestor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Colonizer"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:infestor_respawn_system
-								distance = 5
-								angle = random
-							}
+						set_location = {
+							target = event_target:infestor_respawn_system
+							distance = 5
+							angle = random
 						}
 					}
 				}
@@ -3518,155 +3063,21 @@ event = {
 			random_controlled_ship = {
 				save_event_target_as = constructor_respawn_system
 			}
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_low
+			while = {
+				count = 3
+				create_fleet = {
+					name = "NAME_Prethoryn_Constructor"
+					effect = {
+						set_owner = event_target:prethoryn
+						create_ship = {
+							name = random
+							design = "NAME_Swarm_Constructor"
+							graphical_culture = "swarm_01"
 						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_low
-						}
-					}
-				}
-				while = {
-					count = 5
-					create_fleet = {
-						name = "NAME_Prethoryn_Constructor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Constructor"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:constructor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_medium
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_medium
-						}
-					}
-				}
-				while = {
-					count = 6
-					create_fleet = {
-						name = "NAME_Prethoryn_Constructor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Constructor"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:constructor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_high
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_high
-						}
-					}
-				}
-				while = {
-					count = 11
-					create_fleet = {
-						name = "NAME_Prethoryn_Constructor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Constructor"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:constructor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_nightmare
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_defensive_nightmare
-						}
-					}
-				}
-				while = {
-					count = 33
-					create_fleet = {
-						name = "NAME_Prethoryn_Constructor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Constructor"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:constructor_respawn_system
-								distance = 5
-								angle = random
-							}
-						}
-					}
-				}
-			}
-			else = {
-				while = {
-					count = 3
-					create_fleet = {
-						name = "NAME_Prethoryn_Constructor"
-						effect = {
-							set_owner = event_target:prethoryn
-							create_ship = {
-								name = random
-								design = "NAME_Swarm_Constructor"
-								graphical_culture = "swarm_01"
-							}
-							set_location = {
-								target = event_target:constructor_respawn_system
-								distance = 5
-								angle = random
-							}
+						set_location = {
+							target = event_target:constructor_respawn_system
+							distance = 5
+							angle = random
 						}
 					}
 				}
@@ -3684,146 +3095,6 @@ event = {
 
 	immediate = {
 		if = {
-			limit = {
-				AND = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_default
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_aggressive_default
-						}
-					}
-					any_country = {
-						is_country_type = swarm
-						num_owned_planets > 0
-						num_ships < 2200
-						any_system_within_border = { exists = starbase }
-					}
-				}
-			}
-			random_country = {
-				limit = {
-					is_country_type = swarm
-				}
-				country_event = { id = crisis.207 }
-			}
-		}
-		else_if = {
-			limit = {
-				AND = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_low
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_aggressive_low
-						}
-					}
-					any_country = {
-						is_country_type = swarm
-						num_owned_planets > 0
-						num_ships < 3000
-						any_system_within_border = { exists = starbase }
-					}
-				}
-			}
-			random_country = {
-				limit = {
-					is_country_type = swarm
-				}
-				country_event = { id = crisis.207 }
-			}
-		}
-		else_if = {
-			limit = {
-				AND = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_medium
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_aggressive_medium
-						}
-					}
-					any_country = {
-						is_country_type = swarm
-						num_owned_planets > 0
-						num_ships < 4000
-						any_system_within_border = { exists = starbase }
-					}
-				}
-			}
-			random_country = {
-				limit = {
-					is_country_type = swarm
-				}
-				country_event = { id = crisis.207 }
-			}
-		}
-		else_if = {
-			limit = {
-				AND = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_high
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_aggressive_high
-						}
-					}
-					any_country = {
-						is_country_type = swarm
-						num_owned_planets > 0
-						num_ships < 7000
-						any_system_within_border = { exists = starbase }
-					}
-				}
-			}
-			random_country = {
-				limit = {
-					is_country_type = swarm
-				}
-				country_event = { id = crisis.207 }
-			}
-		}
-		else_if = {
-			limit = {
-				AND = {
-					OR = {
-						AND = {
-							has_global_flag = pbcrisis_general_customization
-							has_global_flag = pbcrisis_general_difficulty_nightmare
-						}
-						AND = {
-							has_global_flag = pbcrisis_detailed_customization
-							has_global_flag = pbcrisis_detailed_difficulty_aggressive_nightmare
-						}
-					}
-					any_country = {
-						is_country_type = swarm
-						num_owned_planets > 0
-						num_ships < 22000
-						any_system_within_border = { exists = starbase }
-					}
-				}
-			}
-			random_country = {
-				limit = {
-					is_country_type = swarm
-				}
-				country_event = { id = crisis.207 }
-			}
-		}
-		else_if = {
 			limit = {
 				any_country = {
 					is_country_type = swarm
@@ -3858,13 +3129,19 @@ country_event = {
 			limit = { exists = starbase }
 			starbase = { save_event_target_as = spawn_location }
 		}
-		swarm_brood = yes
+		while = {
+			count = pbcrisis_fleet_quantity
+			swarm_brood = yes
+		}
 
 		random_system_within_border = {
 			limit = { exists = starbase }
 			starbase = { save_event_target_as = spawn_location }
 		}
-		swarm_brood = yes
+		while = {
+			count = pbcrisis_fleet_quantity
+			swarm_brood = yes
+		}
 
 		if = {
 			limit = {
@@ -3874,7 +3151,10 @@ country_event = {
 				limit = { exists = starbase }
 				starbase = { save_event_target_as = spawn_location }
 			}
-			swarm_brood = yes
+			while = {
+				count = pbcrisis_fleet_quantity
+				swarm_brood = yes
+			}
 		}
 
 		if = {
@@ -3885,7 +3165,10 @@ country_event = {
 				limit = { exists = starbase }
 				starbase = { save_event_target_as = spawn_location }
 			}
-			swarm_brood = yes
+			while = {
+				count = pbcrisis_fleet_quantity
+				swarm_brood = yes
+			}
 		}
 
 		if = {
@@ -4526,247 +3809,30 @@ event = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_default
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_army_default
-					}
-				}
-			}
-			random_country = {
-				limit = { is_country_type = swarm }
-				save_event_target_as = prethoryn
-				owner_species = { save_event_target_as = prethoryn_species }
-				random_owned_planet = {
-					limit = { is_planet_class = pc_infested }
-					create_fleet = {
-						name = "NAME_Prethoryn_Armies"
-						effect = {
-							set_owner = event_target:prethoryn
-							while = {
-								count = 22
-								create_army_transport = {
-									ship_name = "NAME_Prethoryn_Transport"
-									graphical_culture = "swarm_01"
-									army_name = "NAME_Prethoryn_Invaders"
-									army_type = "swarm_army"
-									species = event_target:prethoryn_species
-								}
-							}
-							set_location = {
-								target = PREV
-								distance = 10
-								angle = random
+		random_country = {
+			limit = { is_country_type = swarm }
+			save_event_target_as = prethoryn
+			owner_species = { save_event_target_as = prethoryn_species }
+			random_owned_planet = {
+				limit = { is_planet_class = pc_infested }
+				create_fleet = {
+					name = "NAME_Prethoryn_Armies"
+					effect = {
+						set_owner = event_target:prethoryn
+						while = {
+							count = 20
+							create_army_transport = {
+								ship_name = "NAME_Prethoryn_Transport"
+								graphical_culture = "swarm_01"
+								army_name = "NAME_Prethoryn_Invaders"
+								army_type = "swarm_army"
+								species = event_target:prethoryn_species
 							}
 						}
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_low
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_army_low
-					}
-				}
-			}
-			random_country = {
-				limit = { is_country_type = swarm }
-				save_event_target_as = prethoryn
-				owner_species = { save_event_target_as = prethoryn_species }
-				random_owned_planet = {
-					limit = { is_planet_class = pc_infested }
-					create_fleet = {
-						name = "NAME_Prethoryn_Armies"
-						effect = {
-							set_owner = event_target:prethoryn
-							while = {
-								count = 30
-								create_army_transport = {
-									ship_name = "NAME_Prethoryn_Transport"
-									graphical_culture = "swarm_01"
-									army_name = "NAME_Prethoryn_Invaders"
-									army_type = "swarm_army"
-									species = event_target:prethoryn_species
-								}
-							}
-							set_location = {
-								target = PREV
-								distance = 10
-								angle = random
-							}
-						}
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_medium
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_army_medium
-					}
-				}
-			}
-			random_country = {
-				limit = { is_country_type = swarm }
-				save_event_target_as = prethoryn
-				owner_species = { save_event_target_as = prethoryn_species }
-				random_owned_planet = {
-					limit = { is_planet_class = pc_infested }
-					create_fleet = {
-						name = "NAME_Prethoryn_Armies"
-						effect = {
-							set_owner = event_target:prethoryn
-							while = {
-								count = 40
-								create_army_transport = {
-									ship_name = "NAME_Prethoryn_Transport"
-									graphical_culture = "swarm_01"
-									army_name = "NAME_Prethoryn_Invaders"
-									army_type = "swarm_army"
-									species = event_target:prethoryn_species
-								}
-							}
-							set_location = {
-								target = PREV
-								distance = 10
-								angle = random
-							}
-						}
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_high
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_army_high
-					}
-				}
-			}
-			random_country = {
-				limit = { is_country_type = swarm }
-				save_event_target_as = prethoryn
-				owner_species = { save_event_target_as = prethoryn_species }
-				random_owned_planet = {
-					limit = { is_planet_class = pc_infested }
-					create_fleet = {
-						name = "NAME_Prethoryn_Armies"
-						effect = {
-							set_owner = event_target:prethoryn
-							while = {
-								count = 70
-								create_army_transport = {
-									ship_name = "NAME_Prethoryn_Transport"
-									graphical_culture = "swarm_01"
-									army_name = "NAME_Prethoryn_Invaders"
-									army_type = "swarm_army"
-									species = event_target:prethoryn_species
-								}
-							}
-							set_location = {
-								target = PREV
-								distance = 10
-								angle = random
-							}
-						}
-					}
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				OR = {
-					AND = {
-						has_global_flag = pbcrisis_general_customization
-						has_global_flag = pbcrisis_general_difficulty_nightmare
-					}
-					AND = {
-						has_global_flag = pbcrisis_detailed_customization
-						has_global_flag = pbcrisis_detailed_difficulty_army_nightmare
-					}
-				}
-			}
-			random_country = {
-				limit = { is_country_type = swarm }
-				save_event_target_as = prethoryn
-				owner_species = { save_event_target_as = prethoryn_species }
-				random_owned_planet = {
-					limit = { is_planet_class = pc_infested }
-					create_fleet = {
-						name = "NAME_Prethoryn_Armies"
-						effect = {
-							set_owner = event_target:prethoryn
-							while = {
-								count = 220
-								create_army_transport = {
-									ship_name = "NAME_Prethoryn_Transport"
-									graphical_culture = "swarm_01"
-									army_name = "NAME_Prethoryn_Invaders"
-									army_type = "swarm_army"
-									species = event_target:prethoryn_species
-								}
-							}
-							set_location = {
-								target = PREV
-								distance = 10
-								angle = random
-							}
-						}
-					}
-				}
-			}
-		}
-		else = {
-			random_country = {
-				limit = { is_country_type = swarm }
-				save_event_target_as = prethoryn
-				owner_species = { save_event_target_as = prethoryn_species }
-				random_owned_planet = {
-					limit = { is_planet_class = pc_infested }
-					create_fleet = {
-						name = "NAME_Prethoryn_Armies"
-						effect = {
-							set_owner = event_target:prethoryn
-							while = {
-								count = 20
-								create_army_transport = {
-									ship_name = "NAME_Prethoryn_Transport"
-									graphical_culture = "swarm_01"
-									army_name = "NAME_Prethoryn_Invaders"
-									army_type = "swarm_army"
-									species = event_target:prethoryn_species
-								}
-							}
-							set_location = {
-								target = PREV
-								distance = 10
-								angle = random
-							}
+						set_location = {
+							target = PREV
+							distance = 10
+							angle = random
 						}
 					}
 				}
