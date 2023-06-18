@@ -15,3 +15,9 @@ on_monthly_pulse_country = {
         pbcrisis.1
     }
 }
+
+on_decade_pulse_country = {
+    events = {
+        pbcrisis.4
+    }
+}

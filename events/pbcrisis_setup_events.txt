@@ -20,6 +20,7 @@ event = {
             set_global_flag = pbcrisis_detailed_difficulty_strategic_1
             set_global_flag = pbcrisis_detailed_difficulty_quantity_1
             set_global_flag = pbcrisis_detailed_difficulty_component_1
+            set_global_flag = pbcrisis_type_default
             country_event = { id = pbcrisis.2 }
         }
     }
@@ -35,11 +36,9 @@ country_event = {
             limit = {
                 has_global_flag = galactic_crisis_happened
             }
-            every_country = {
-                country_event = { id = pbcrisis.10 }
-                country_event = { id = pbcrisis.20 }
-                country_event = { id = pbcrisis.30 }
-            }
+            country_event = { id = pbcrisis.10 }
+            country_event = { id = pbcrisis.20 }
+            country_event = { id = pbcrisis.30 }
         }
     }
 }
@@ -51,6 +50,7 @@ country_event = {
     desc = pbcrisis.2.desc
     picture = GFX_evt_pbcrisis_menu
     is_triggered_only = yes
+
     option = {
         trigger = {
             has_global_flag = pbcrisis_general_customization
@@ -75,6 +75,7 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
+
     option = {
         trigger = {
             has_global_flag = pbcrisis_general_customization
@@ -127,10 +128,14 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
-    option = {
+    option = { # general difficulty setting no more than 25 crisis_strength_scale
         trigger = {
             has_global_flag = pbcrisis_general_customization
             has_global_flag = pbcrisis_general_difficulty_100
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value <= 25
+            }
         }
         name = pbcrisis.2.set_general_difficulty_100
         custom_tooltip = pbcrisis.2.set_general_difficulty_100TT
@@ -140,10 +145,31 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
-    option = {
+    option = { # general difficulty setting more than 25 crisis_strength_scale
+        trigger = {
+            has_global_flag = pbcrisis_general_customization
+            has_global_flag = pbcrisis_general_difficulty_100
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value > 25
+            }
+        }
+        name = pbcrisis.2.set_general_difficulty_100_warning
+        custom_tooltip = pbcrisis.2.set_general_difficulty_100_warningTT
+        remove_global_flag = pbcrisis_general_difficulty_100
+        set_global_flag = pbcrisis_general_difficulty_1000
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = { # general difficulty setting with no more than 1 crisis_strength_scale
         trigger = {
             has_global_flag = pbcrisis_general_customization
             has_global_flag = pbcrisis_general_difficulty_1000
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value <= 1
+            }
         }
         name = pbcrisis.2.set_general_difficulty_1000
         custom_tooltip = pbcrisis.2.set_general_difficulty_1000TT
@@ -153,6 +179,24 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
+    option = { # general difficulty setting with more than 1 crisis_strength_scale
+        trigger = {
+            has_global_flag = pbcrisis_general_customization
+            has_global_flag = pbcrisis_general_difficulty_1000
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value > 1
+            }
+        }
+        name = pbcrisis.2.set_general_difficulty_1000_warning
+        custom_tooltip = pbcrisis.2.set_general_difficulty_1000_warningTT
+        remove_global_flag = pbcrisis_general_difficulty_1000
+        set_global_flag = pbcrisis_general_difficulty_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
@@ -231,6 +275,7 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
+
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
@@ -283,10 +328,14 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
-    option = {
+    option = {  # defensive difficulty setting no more than 25 crisis_strength_scale
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
             has_global_flag = pbcrisis_detailed_difficulty_defensive_100
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value <= 25
+            }
         }
         name = pbcrisis.2.set_detailed_difficulty_defensive_100
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_100TT
@@ -296,10 +345,31 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
-    option = {
+    option = {  # defensive difficulty setting more than 25 crisis_strength_scale
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_100
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value > 25
+            }
+        }
+        name = pbcrisis.2.set_detailed_difficulty_defensive_100_warning
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_100_warningTT
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_100
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = { # defensive difficulty setting no more than 1 crisis_strength_scale
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
             has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value <= 1
+            }
         }
         name = pbcrisis.2.set_detailed_difficulty_defensive_1000
         custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_1000TT
@@ -309,6 +379,24 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
+    option = { # defensive difficulty setting more than 1 crisis_strength_scale
+        trigger = {
+            has_global_flag = pbcrisis_detailed_customization
+            has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+            check_galaxy_setup_value = {
+                setting = crisis_strength_scale
+                value > 1
+            }
+        }
+        name = pbcrisis.2.set_detailed_difficulty_defensive_1000_warning
+        custom_tooltip = pbcrisis.2.set_detailed_difficulty_defensive_1000_warningTT
+        remove_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+        set_global_flag = pbcrisis_detailed_difficulty_defensive_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
@@ -387,6 +475,7 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
+
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
@@ -465,6 +554,7 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
+
     option = {
         trigger = {
             has_global_flag = pbcrisis_detailed_customization
@@ -543,11 +633,856 @@ country_event = {
             country_event = { id = pbcrisis.2 }
         }
     }
+
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_type_default
+        }
+        name = pbcrisis.2.set_crisis_type_default
+        custom_tooltip = pbcrisis.2.set_crisis_type_defaultTT
+        remove_global_flag = pbcrisis_type_default
+        set_global_flag = pbcrisis_type_loop
+        set_global_flag = pbcrisis_type_loop_1
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+    option = {
+        trigger = {
+            has_global_flag = pbcrisis_type_loop
+        }
+        name = pbcrisis.2.set_crisis_type_loop
+        custom_tooltip = pbcrisis.2.set_crisis_type_loopTT
+        remove_global_flag = pbcrisis_type_loop
+        remove_global_flag = pbcrisis_type_loop_1
+        set_global_flag = pbcrisis_type_default
+        hidden_effect = {
+            country_event = { id = pbcrisis.2 }
+        }
+    }
+
     option = {
         name = pbcrisis.2.close_menu
         custom_tooltip = pbcrisis.2.close_menuTT
         hidden_effect = {
-            country_event = { id = pbcrisis.1 }
+            country_event = { id = pbcrisis.3 }
+        }
+    }
+}
+
+# Froce detection of final crisis
+country_event = {
+    id = pbcrisis.3
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        country_event = { id = pbcrisis.10 }
+        country_event = { id = pbcrisis.20 }
+        country_event = { id = pbcrisis.30 }
+    }
+}
+
+# Loop crisis type handler
+event = {
+    id = pbcrisis.4
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                has_global_flag = pbcrisis_type_loop
+                has_global_flag = pbcrisis_type_loop_1
+                NOR = {
+                    has_global_flag = pbcrisis_type_loop_2
+                    has_global_flag = pbcrisis_type_loop_3
+                    has_global_flag = pbcrisis_type_loop_4
+                    has_global_flag = pbcrisis_type_loop_5
+                    has_global_flag = pbcrisis_type_loop_6
+                }
+                NOT = { has_global_flag = pbcrisis_type_loop_detection }
+            }
+            random_list = {
+                10 = {
+                    country_event = { id = crisis.10 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = prethoryn_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.1000 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = extradimensional_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.2005 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = ai_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                100 = {}
+            }
+            if = {
+                limit = {
+                    has_global_flag = prethoryn_invasion_defeated
+                    has_global_flag = extradimensional_invasion_defeated
+                    has_global_flag = ai_invasion_defeated
+                }
+                set_global_flag = pbcrisis_type_loop_2
+                remove_global_flag = prethoryn_invasion_defeated
+                remove_global_flag = extradimensional_invasion_defeated
+                remove_global_flag = ai_invasion_defeated
+            }
+        }
+        else_if = {
+            limit = {
+                has_global_flag = pbcrisis_type_loop
+                has_global_flag = pbcrisis_type_loop_1
+                has_global_flag = pbcrisis_type_loop_2
+                NOR = {
+                    has_global_flag = pbcrisis_type_loop_3
+                    has_global_flag = pbcrisis_type_loop_4
+                    has_global_flag = pbcrisis_type_loop_5
+                    has_global_flag = pbcrisis_type_loop_6
+                }
+                NOT = { has_global_flag = pbcrisis_type_loop_detection }
+                OR = {
+                    AND = {
+                        has_global_flag = pbcrisis_general_customization
+                        OR = {
+                            has_global_flag = pbcrisis_general_difficulty_5
+                            has_global_flag = pbcrisis_general_difficulty_10
+                            has_global_flag = pbcrisis_general_difficulty_25
+                            has_global_flag = pbcrisis_general_difficulty_100
+                            has_global_flag = pbcrisis_general_difficulty_1000
+                        }
+                    }
+                    AND = {
+                        has_global_flag = pbcrisis_detailed_customization
+                        OR = {
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_5
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_5
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_5
+                            has_global_flag = pbcrisis_detailed_difficulty_component_2
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_2
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_10
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_10
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_10
+                            has_global_flag = pbcrisis_detailed_difficulty_component_4
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_3
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_25
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_25
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_25
+                            has_global_flag = pbcrisis_detailed_difficulty_component_8
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_4
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_100
+                            has_global_flag = pbcrisis_detailed_difficulty_component_16
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_5
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_component_32
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_6
+                        }
+                    }
+                }
+            }
+            random_list = {
+                10 = {
+                    country_event = { id = crisis.10 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = prethoryn_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.1000 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = extradimensional_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.2005 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = ai_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                100 = {}
+            }
+            if = {
+                limit = {
+                    has_global_flag = prethoryn_invasion_defeated
+                    has_global_flag = extradimensional_invasion_defeated
+                    has_global_flag = ai_invasion_defeated
+                }
+                set_global_flag = pbcrisis_type_loop_3
+                remove_global_flag = prethoryn_invasion_defeated
+                remove_global_flag = extradimensional_invasion_defeated
+                remove_global_flag = ai_invasion_defeated
+            }
+        }
+        else_if = {
+            limit = {
+                has_global_flag = pbcrisis_type_loop
+                has_global_flag = pbcrisis_type_loop_1
+                has_global_flag = pbcrisis_type_loop_2
+                has_global_flag = pbcrisis_type_loop_3
+                NOR = {
+                    has_global_flag = pbcrisis_type_loop_4
+                    has_global_flag = pbcrisis_type_loop_5
+                    has_global_flag = pbcrisis_type_loop_6
+                }
+                NOT = { has_global_flag = pbcrisis_type_loop_detection }
+                OR = {
+                    AND = {
+                        has_global_flag = pbcrisis_general_customization
+                        OR = {
+                            has_global_flag = pbcrisis_general_difficulty_10
+                            has_global_flag = pbcrisis_general_difficulty_25
+                            has_global_flag = pbcrisis_general_difficulty_100
+                            has_global_flag = pbcrisis_general_difficulty_1000
+                        }
+                    }
+                    AND = {
+                        has_global_flag = pbcrisis_detailed_customization
+                        OR = {
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_10
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_10
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_10
+                            has_global_flag = pbcrisis_detailed_difficulty_component_4
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_3
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_25
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_25
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_25
+                            has_global_flag = pbcrisis_detailed_difficulty_component_8
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_4
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_100
+                            has_global_flag = pbcrisis_detailed_difficulty_component_16
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_5
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_component_32
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_6
+                        }
+                    }
+                }
+            }
+            random_list = {
+                10 = {
+                    country_event = { id = crisis.10 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = prethoryn_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.1000 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = extradimensional_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.2005 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = ai_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                100 = {}
+            }
+            if = {
+                limit = {
+                    has_global_flag = prethoryn_invasion_defeated
+                    has_global_flag = extradimensional_invasion_defeated
+                    has_global_flag = ai_invasion_defeated
+                }
+                set_global_flag = pbcrisis_type_loop_4
+                remove_global_flag = prethoryn_invasion_defeated
+                remove_global_flag = extradimensional_invasion_defeated
+                remove_global_flag = ai_invasion_defeated
+            }
+        }
+        else_if = {
+            limit = {
+                has_global_flag = pbcrisis_type_loop
+                has_global_flag = pbcrisis_type_loop_1
+                has_global_flag = pbcrisis_type_loop_2
+                has_global_flag = pbcrisis_type_loop_3
+                has_global_flag = pbcrisis_type_loop_4
+                NOR = {
+                    has_global_flag = pbcrisis_type_loop_5
+                    has_global_flag = pbcrisis_type_loop_6
+                }
+                NOT = { has_global_flag = pbcrisis_type_loop_detection }
+                OR = {
+                    AND = {
+                        has_global_flag = pbcrisis_general_customization
+                        OR = {
+                            has_global_flag = pbcrisis_general_difficulty_25
+                            has_global_flag = pbcrisis_general_difficulty_100
+                            has_global_flag = pbcrisis_general_difficulty_1000
+                        }
+                    }
+                    AND = {
+                        has_global_flag = pbcrisis_detailed_customization
+                        OR = {
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_25
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_25
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_25
+                            has_global_flag = pbcrisis_detailed_difficulty_component_8
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_4
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_100
+                            has_global_flag = pbcrisis_detailed_difficulty_component_16
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_5
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_component_32
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_6
+                        }
+                    }
+                }
+            }
+            random_list = {
+                10 = {
+                    country_event = { id = crisis.10 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = prethoryn_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.1000 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = extradimensional_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.2005 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = ai_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                100 = {}
+            }
+            if = {
+                limit = {
+                    has_global_flag = prethoryn_invasion_defeated
+                    has_global_flag = extradimensional_invasion_defeated
+                    has_global_flag = ai_invasion_defeated
+                }
+                set_global_flag = pbcrisis_type_loop_5
+                remove_global_flag = prethoryn_invasion_defeated
+                remove_global_flag = extradimensional_invasion_defeated
+                remove_global_flag = ai_invasion_defeated
+            }
+        }
+        else_if = {
+            limit = {
+                has_global_flag = pbcrisis_type_loop
+                has_global_flag = pbcrisis_type_loop_1
+                has_global_flag = pbcrisis_type_loop_2
+                has_global_flag = pbcrisis_type_loop_3
+                has_global_flag = pbcrisis_type_loop_4
+                has_global_flag = pbcrisis_type_loop_5
+                NOR = {
+                    has_global_flag = pbcrisis_type_loop_6
+                }
+                NOT = { has_global_flag = pbcrisis_type_loop_detection }
+                OR = {
+                    AND = {
+                        has_global_flag = pbcrisis_general_customization
+                        OR = {
+                            has_global_flag = pbcrisis_general_difficulty_100
+                            has_global_flag = pbcrisis_general_difficulty_1000
+                        }
+                    }
+                    AND = {
+                        has_global_flag = pbcrisis_detailed_customization
+                        OR = {
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_100
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_100
+                            has_global_flag = pbcrisis_detailed_difficulty_component_16
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_5
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_component_32
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_6
+                        }
+                    }
+                }
+            }
+            random_list = {
+                10 = {
+                    country_event = { id = crisis.10 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = prethoryn_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.1000 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = extradimensional_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.2005 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = ai_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                100 = {}
+            }
+            if = {
+                limit = {
+                    has_global_flag = prethoryn_invasion_defeated
+                    has_global_flag = extradimensional_invasion_defeated
+                    has_global_flag = ai_invasion_defeated
+                }
+                set_global_flag = pbcrisis_type_loop_6
+                remove_global_flag = prethoryn_invasion_defeated
+                remove_global_flag = extradimensional_invasion_defeated
+                remove_global_flag = ai_invasion_defeated
+            }
+        }
+        else_if = {
+            limit = {
+                has_global_flag = pbcrisis_type_loop
+                has_global_flag = pbcrisis_type_loop_1
+                has_global_flag = pbcrisis_type_loop_2
+                has_global_flag = pbcrisis_type_loop_3
+                has_global_flag = pbcrisis_type_loop_4
+                has_global_flag = pbcrisis_type_loop_5
+                has_global_flag = pbcrisis_type_loop_6
+                NOT = { has_global_flag = pbcrisis_type_loop_detection }
+                OR = {
+                    AND = {
+                        has_global_flag = pbcrisis_general_customization
+                        OR = {
+                            has_global_flag = pbcrisis_general_difficulty_1000
+                        }
+                    }
+                    AND = {
+                        has_global_flag = pbcrisis_detailed_customization
+                        OR = {
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_5
+                            has_global_flag = pbcrisis_detailed_difficulty_aggressive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_defensive_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_strategic_1000
+                            has_global_flag = pbcrisis_detailed_difficulty_component_32
+                            has_global_flag = pbcrisis_detailed_difficulty_quantity_6
+                        }
+                    }
+                }
+            }
+            random_list = {
+                10 = {
+                    country_event = { id = crisis.10 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = prethoryn_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.1000 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = extradimensional_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                10 = {
+                    country_event = { id = crisis.2005 }
+                    modifier = {
+                        factor = 0
+                        has_global_flag = ai_invasion_defeated
+                    }
+                    modifier = {
+                        factor = 2
+                        has_global_flag = pbcrisis_general_difficulty_5
+                    }
+                    modifier = {
+                        factor = 3
+                        has_global_flag = pbcrisis_general_difficulty_10
+                    }
+                    modifier = {
+                        factor = 4
+                        has_global_flag = pbcrisis_general_difficulty_25
+                    }
+                    modifier = {
+                        factor = 5
+                        has_global_flag = pbcrisis_general_difficulty_100
+                    }
+                    modifier = {
+                        factor = 6
+                        has_global_flag = pbcrisis_general_difficulty_1000
+                    }
+                }
+                100 = {}
+            }
+        }
+        set_timed_global_flag = {
+            flag = pbcrisis_type_loop_detection
+            days = 3599
         }
     }
 }

@@ -10,7 +10,11 @@ country_event = {
     immediate = {
         if = {
             limit = {
+                OR = {
                     is_country_type = swarm
+                    is_country_type = feral_prethoryn
+                    is_country_type = feral_prethoryn_infighting
+                }
             }
             country_event = { id = pbcrisis.11 }
         }
@@ -47,6 +51,63 @@ country_event = {
             else_if = {
                 limit = {
                     has_global_flag = pbcrisis_general_difficulty_5
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_2 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_5
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 5
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 2
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_10
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_2 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_10
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_3 }
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
@@ -81,6 +142,63 @@ country_event = {
             else_if = {
                 limit = {
                     has_global_flag = pbcrisis_general_difficulty_25
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_2 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_25
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_3 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 5
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 2
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_25
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_4 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 10
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 3
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 4
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_25
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
@@ -98,6 +216,177 @@ country_event = {
             else_if = {
                 limit = {
                     has_global_flag = pbcrisis_general_difficulty_100
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_2 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_100
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_3 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 5
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 2
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_100
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_4 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 10
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 3
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 4
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_100
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_5 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 25
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 4
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 8
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_100
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 100
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 5
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 16
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_1000
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_2 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 1
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 1
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_1000
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_3 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 5
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 2
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 2
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_1000
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_4 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 10
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 3
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 4
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_1000
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_5 }
+                }
+                set_variable = {
+                    which = pbcrisis_global_difficulty
+                    value = 25
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_quantity
+                    value = 4
+                }
+                set_variable = {
+                    which = pbcrisis_fleet_component
+                    value = 8
+                }
+            }
+            else_if = {
+                limit = {
+                    has_global_flag = pbcrisis_general_difficulty_1000
+                    has_global_flag = pbcrisis_type_loop
+                    NOT = { has_global_flag = pbcrisis_type_loop_6 }
                 }
                 set_variable = {
                     which = pbcrisis_global_difficulty
